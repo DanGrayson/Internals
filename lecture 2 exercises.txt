@@ -1,0 +1,67 @@
+lecture 2 exercises
+-----------------------------------------------------------------------------
+
+I assume you have built Macaulay2 successfully.
+
+Locate Macaulay2/c/scc1 in your build directory and put it somewhere on
+your PATH, so you can run it.  Use, for example, emacs' M-x setenv, or modify
+your file ~/.profile.
+
+Run "make" in ./"D language" to see what happens, as I did in the lecture.
+Modify the file "foo.d" to try to make it do various things.  Read the
+documentation of the D language in Macaulay2/d/README, learn some features, and
+try them out, checking the C source code to see what the result was.  (You will
+not be able to "run" your program.)
+
+Learn how to use emacs'
+
+       M-x tags-search
+
+(It is bound to <menu-bar> <edit> <search> <tags-srch>) in the source directory
+Macaulay2/d, using the TAGS file there, which was made while building.  The
+documentation is accessible with
+
+       C-h f tags-search
+
+(If you want to use a different tags file, use M-x visit-tags-table.)  Now
+search for the source code of various top level functions, such as "sin"
+(search with quotation marks included to find where the symbol is created).
+
+Add a top level function to the file actors3.d, as I did in the lecture.  It
+doesn't have to do much.  Also add an entry for it to Macaulay2/m2/exports.m2,
+so it is visible at top level as a symbol in the package "Core".
+
+Run the copy of Macaulay2 you have built, in the build directory, so you can
+run it in place and it will read the *.d files, incuding the one you've
+modified.  One way is to kill any existing buffer "*M2*" -- then navigate to
+the top of your build directory, which will look like this when visited within
+emacs:
+
+      /Users/dan/src/M2/M2.git/M2/BUILD/dan/builds.tmp/gallium-master:
+      total used in directory 1000 available 9764819919
+      -r--r--r--   1 dan  staff   30304 May  7 16:50 GNUmakefile
+      -rwxrwxr-x   1 dan  staff     129 May  7 16:50 M2
+      drwxrwxr-x  24 dan  staff     768 May  7 16:50 Macaulay2
+      drwxrwxr-x   3 dan  staff      96 May  7 16:50 check-configure
+      -rw-rw-r--   1 dan  staff     340 May  7 16:50 config.args
+      -rw-rw-r--   1 dan  staff  389368 May  7 16:50 config.log
+      -rwxrwxr-x   1 dan  staff   66648 May  7 16:50 config.status
+      drwxrwxr-x  11 dan  staff     352 May  7 16:50 distributions
+      drwxrwxr-x   5 dan  staff     160 May  7 16:50 include
+      drwxrwxr-x  41 dan  staff    1312 May  7 16:50 libraries
+      -rw-rw-r--   1 dan  staff      29 May  7 16:50 srcdir
+      drwxr-xr-x   6 dan  staff     192 Nov  1  2019 submodules
+      drwxr-xr-x   6 dan  staff     192 May  7 16:50 usr-dist
+      drwxrwxr-x   7 dan  staff     224 Nov  1  2019 usr-host
+
+Start M2 with the C-u f12, so you get a chance to edit the command line,
+changing "M2" to "./M2", so you will run the copy of M2 in the current
+directory, ".".
+
+Run your function.
+
+Now, instead of exporting the name of the function, or in addition to it, add
+a line to one of the files Macaulay2/m2/*.m2 so your function is called when
+"res 4" is evaluated.  Then modify the source code in actors3.d so it returns
+the cube of its (integer) argument.  (Find some other code in *.d files to see
+how to get access to an integer argument passed from top level.)
