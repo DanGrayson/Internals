@@ -1,2 +1,9 @@
 In this repository we record some files used to demonstrate the internal
 operation of the Macaulay2 build system and source code.
+
+--
+
+Add these lines to your .emacs file for looking at *.d files beautifully:
+
+(setq auto-mode-alist (cons '("\\.d$" . M2-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.dd$" . M2-mode) auto-mode-alist))
