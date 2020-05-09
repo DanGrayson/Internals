@@ -1,0 +1,212 @@
+######################
+## Exercises #########
+######################
+
+Exercise:
+  Part 1.  Recreate the hello world example we did in the
+    presentation, with compilation, and running M2 to see the results
+    (so this will add code to e/engine.h, e/x-mat.cpp, d/interface.dd,
+    and a file of yours, hello.m2).  If you want hints for the code
+    itself (what we did in the presentation), look at the end of this
+    file.  If you need help with compilation and syntax errors, talk
+    to one of us!
+    
+  Part 2. A variation.
+    Rewrite the function rawHelloto take two more arguments, a Ring
+    and a Matrix.  For now, we won't do anything with these.
+  
+  Hints: look at interface.dd for other functions and see how they are done.
+    changes to the d code should include lines something like:
+    
+    when s.2 is m:RawMatrixCell do 
+    when s.3 is r:RawRingCell do
+
+      (and now when passing it to the engine, use `r.p` when passing
+          to Ccode: this is how one goes from a "Cell" to the pointer
+          in the engine itself.  We will discuss this in the second
+          part of the presentation).
+      
+    else WrongArg(3, "a ring of your choice")
+    else WrongArg(2, "a cool matrix")
+
+  Note: After the break, we will look more into the connection of
+  types in C++ (such as Ring, Matrix), to values in the front end.
+  (and see where the `r.p` syntax comes from).
+   
+
+##########################
+## Exercises part 2. #####
+##########################
+
+1. First create in test.m2 a test for creating a fraction ring in the m2 language.
+   `debug Core`, and look at the raw ring. (e.g. R = QQ[x]; K = frac R; debug Core; K.RawRing)
+   Now, in the source code in d and e,
+     change the name IM2_Ring_frac to rawFractionRing. Perhaps add in a friendly 
+     message to this function so that you know your changes are being made.
+   Recompile Macaulay2, try out your function.
+
+2. Run the unit tests:
+   In the cmake build:
+     ninja M2-unit-tests  # to build them
+     ctest -R unit
+   In the configure build, in the e directory (the directory is where my build is)
+     cd ~/cleveland/m2-git/M2/BUILD/mike/builds.tmp/darwin64-appleclang/Macaulay2/e/unit-tests
+     gmake check  # or make check
+
+3. Create the documentation
+   for any kind of build, first install 'doxygen' and for the cmake build, 'sphinx' 
+   configure:
+     in the Macaulay2/e directory in the build tree:
+     make tinydoc
+     open doc/tinydoc/index.html
+   cmake build system: at top level in the build tree:
+     cmake -DBUILD_DOCS=on .
+     ninja M2-docs-doxygen
+     open Macaulay2/docs/doxygen/html/index.html
+
+3. Make other changes in the e directory: e.g. change 0's which are
+   supposed to be pointers to 'nullptr', recompile, run unit tests.
+   Or fix error messages that you find.
+         
+4*.  Advanced version, don't do if you are just learning this: do this
+   for all functions which start with IM2_, and which are connected to
+   a raw* function in interface.dd, and submit a pull request for
+   that, after testing that it didn't break any examples or tests.
+
+############################
+## The next is optional, either for tomorrow, or for those more advanced
+## If any interest, we can discuss this on Sunday.
+############################ 
+
+5. Create a new type in the engine.  Place it in a file CoolType.hpp in the engine,
+   Now make the changes needed in d/interface.dd and in the d directory in order to expose the type RawCoolType to the front end.
+   Define it in the e directory (will need to change engine.h, Makefile.files.in, CMakeLists.txt)
+
+-- Hint for exercise 2: grep for RawSLProgram in the d directory.
+--  If you need to add a new type, this shows where code needs to be added.
+-- Files affected in d language.
+    -- actors4.d  -- toString
+    -- basic.d  -- def of the hash function
+    -- classes.dd -- rawSLProgramClass
+    -- engine.dd -- def of RawSLProgram, RawSLProgramOrNull, RawSLProgramCell
+    --    in particular, RawSLProgram is defined as a pointer.
+    -- equality.dd -- equality of 2 SLPrograms (always false, unless same ptr)
+    -- expr.d -- def of rawSLProgramClass
+    -- parse.d  -- definition of Expr (includes RawSLProgramCell)
+    -- util.d -- toExpr (defines when input is RawSLProgram, or RawSLProgramOrNull)
+-- add it to e/CMakeList.txt (cmake build), or e/Makefile.files.in (configure build).
+-- put an include 
+
+
+###################################
+## Code from presentation Part 1 ##
+###################################
+# e/engine.h
+int rawHelloWorld(int a, int b);
+
+# e/x-mat.cpp
+int rawHelloWorld(int a, int b)
+{
+  std::cout << "Hello world, your arguments were " << a << " and " << b << std::endl;
+  return a*b;
+}
+
+# d/interface.dd
+rawHelloWorld(e:Expr):Expr := (
+    when e is s:Sequence do
+    if length(s) == 2 then
+    if isSmallInt(s.0) then
+    if isSmallInt(s.1) then
+        toExpr(Ccode(int,
+                "rawHelloWorld(",
+                getSmallInt(s.0), ",",
+                getSmallInt(s.1), ")"
+                ))
+    else WrongArgSmallInteger(2)
+    else WrongArgSmallInteger(1)
+    else WrongNumArgs(2)
+    else WrongNumArgs(2)
+    );
+setupfun("rawHelloWorld", rawHelloWorld);
+
+# test.m2
+  debug Core
+  rawHelloWorld(3, 6)
+  rawHelloWorld(3, 6, 6)
+  rawHelloWorld(3, 648397548395734753987893457)
+  rawHelloWorld {3, 5}
+  rawHelloWorld (13948324324890, 0)
+  
+  -- or:
+  rawHelloWorld := value Core#"private dictionary"#"rawHelloWorld"
+  helloWorld = method()
+  helloWorld(ZZ, ZZ) := (a,b) -> rawHelloWorld(a,b)
+
+  helloWorld(3,6)    
+  helloWorld(3, 6, 6)
+  helloWorld(3, 648397548395734753987893457)
+  helloWorld {3, 5}
+  helloWorld (13948324324890, 0)
+
+######################
+#### Part 2 ##########
+######################
+
+(This is a very basic overview, to be improved for the wiki!)
+
+Some basic types in the engine:
+  Ring, RingElement.
+
+Let's consider these first.  Questions to ask:
+
+* How are rings handled in M2?
+  `Ring` is a front end type, which is a hash table.  It contains a `RawRing` value.  
+  What is that?  
+  How does it compare to the Ring class in the engine?
+
+  showStructure()
+    we see: EngineRing is a type of Ring, FractionField is a type of EngineRing.
+  Example: consider the code for creating a fraction ring
+    code methods frac
+    we see lots of stuff, but there is a function: rawFractionRing.
+    debug Core
+    R = ZZ/101[a]
+    peek R
+    R.RawRing -- this is a pointer to a c++ object in the engine.
+  
+  now let's go look for the function rawFractionRing
+  it is in d/interface.dd
+    it calls IM2_Ring_frac, (this is old style.  We should change this usage to rawFractionRing).
+    notice it returns something of type RawRingOrNull.
+    if it is null: then the code failed and set an error message.
+      in this case 'toExpr' detects that, and either gives an error message
+      or returns an object of class RawRing.
+  this function is declared in engine.h, defined in x-relem.cpp.
+
+  notice: it does some error handling.  Then calls FractionField::create(P).
+  (calls ERROR(...)).
+  
+  let's look at the files:
+    e/ring.hpp
+    e/x-relem.cpp
+    e/engine.h
+    d/interface.dd
+
+  How does this type get exposed to the front end?
+  rawFractionRing returns an Expr.
+  
+  definition of Expr -- parse.d
+  defines Expr. an Expr is a (typed) variant type: it
+    contains a RawRingCell as a possible type.
+  export RawRingCell := {+ p:RawRing };  -- engine.dd
+  export RawRing := Pointer "const struct Ring *"; -- engine.dd
+  toExpr(RawRing), toExpr(RawRingOrNull) -- util.d
+  RawRingClass -- classes.dd, 
+  -- each engine type has:
+  --  a hash value
+  --  a toString function  -- actors4.d
+  --  equality check -- equality.dd
+
+-- Hint: grep for RawSLProgram in the d directory.
+--  If you need to add a new type, this shows where code needs to be added.
+--    Not trivial: but could be automated.
