@@ -11,7 +11,8 @@ Run "make" in ./"D language" to see what happens, as I did in the lecture.
 Modify the file "foo.d" to try to make it do various things.  Read the
 documentation of the D language in Macaulay2/d/README, learn some features, and
 try them out, checking the C source code to see what the result was.  (You will
-not be able to "run" your program.)
+not be able to "run" your program.)  Try to decipher the information in
+"foo.sym".
 
 Learn how to use emacs'
 
@@ -19,7 +20,7 @@ Learn how to use emacs'
 
 (It is bound to <menu-bar> <edit> <search> <tags-srch>) in the source directory
 Macaulay2/d, using the TAGS file there, which was made while building.  The
-documentation is accessible with
+	     documentation is accessible with
 
        C-h f tags-search
 
