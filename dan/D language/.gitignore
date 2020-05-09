@@ -1,3 +1,7 @@
 *.tmp
 *-tmp.c
 *.db
+*.log
+*.out
+*.sym
+*-exports.h
