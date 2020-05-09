@@ -1,0 +1,50 @@
+Exercises for lecture 1
+-----------------------------------------------------------------------------
+look at https://github.com/Macaulay2/M2/
+
+create an account on github.com
+
+fork Macaulay2/M2
+
+clone Macaulay2/M2
+
+read M2/INSTALL
+
+run "make" in M2/.
+
+run "configure --help" and peruse the result
+
+run "configure" in a build directory that is not
+the source directory; look at the result
+
+modify M2/configure.ac to make it do something slightly different (maybe just
+display a message); then rebuild "configure" from it
+
+start a build in M2/BUILD/dan (Mahrud will show you a faster way)
+
+learn emacs (the emacs tutorial is on C-h t)
+
+learn emacs "info" mode
+
+use emacs "info" mode to read the documentation of emacs and bash: look up what
+a keystroke does; get the list of bindings in your minor mode; look up what a
+function does; add something interesting to your ~/.emacs file
+
+write a shell script that does something
+
+write a makefile that does something
+
+learn something about the organization of the Macaulay2 source
+code by reading various README files and Makefiles, then record
+what you learn from it and from these lectures on the wiki at
+https://github.com/Macaulay2/M2/
+
+think of some questions to ask us and ask them
+ 
+look at the issues on https://github.com/Macaulay2/M2/;
+  choose an issue to address and get yourself assigned to it;
+  fix it;
+  submit a pull request;
+  endure our comments;
+  accept our thanks!
+

@@ -1,0 +1,1391 @@
+-*- sh -*-
+gallium$ pwd
+/Users/dan/src/M2/M2.git/M2
+gallium$ cd /tmp
+gallium$ git clone git@github.com:DanGrayson/M2.git
+Cloning into 'M2'...
+remote: Enumerating objects: 7, done.        
+remote: Counting objects:  14% (1/7)        remote: Counting objects:  28% (2/7)        remote: Counting objects:  42% (3/7)        remote: Counting objects:  57% (4/7)        remote: Counting objects:  71% (5/7)        remote: Counting objects:  85% (6/7)        remote: Counting objects: 100% (7/7)        remote: Counting objects: 100% (7/7), done.        
+remote: Compressing objects:  14% (1/7)        remote: Compressing objects:  28% (2/7)        remote: Compressing objects:  42% (3/7)        remote: Compressing objects:  57% (4/7)        remote: Compressing objects:  71% (5/7)        remote: Compressing objects:  85% (6/7)        remote: Compressing objects: 100% (7/7)        remote: Compressing objects: 100% (7/7), done.        
+Receiving objects:   0% (1/178839)Receiving objects:   1% (1789/178839)Receiving objects:   2% (3577/178839)Receiving objects:   3% (5366/178839)Receiving objects:   4% (7154/178839)Receiving objects:   5% (8942/178839)Receiving objects:   6% (10731/178839)Receiving objects:   7% (12519/178839)Receiving objects:   8% (14308/178839)Receiving objects:   9% (16096/178839)Receiving objects:  10% (17884/178839)Receiving objects:  11% (19673/178839), 3.84 MiB | 7.67 MiB/sReceiving objects:  12% (21461/178839), 3.84 MiB | 7.67 MiB/sReceiving objects:  13% (23250/178839), 3.84 MiB | 7.67 MiB/sReceiving objects:  14% (25038/178839), 3.84 MiB | 7.67 MiB/sReceiving objects:  15% (26826/178839), 3.84 MiB | 7.67 MiB/sReceiving objects:  16% (28615/178839), 3.84 MiB | 7.67 MiB/sReceiving objects:  16% (29421/178839), 7.93 MiB | 7.93 MiB/sReceiving objects:  17% (30403/178839), 7.93 MiB | 7.93 MiB/sReceiving objects:  18% (32192/178839), 11.32 MiB | 7.50 MiB/sReceiving objects:  18% (32746/178839), 14.25 MiB | 7.09 MiB/sReceiving objects:  19% (33980/178839), 14.25 MiB | 7.09 MiB/sReceiving objects:  20% (35768/178839), 17.73 MiB | 7.07 MiB/sReceiving objects:  21% (37557/178839), 17.73 MiB | 7.07 MiB/sReceiving objects:  21% (38105/178839), 21.37 MiB | 7.10 MiB/sReceiving objects:  22% (39345/178839), 21.37 MiB | 7.10 MiB/sReceiving objects:  23% (41133/178839), 21.37 MiB | 7.10 MiB/sReceiving objects:  24% (42922/178839), 21.37 MiB | 7.10 MiB/sReceiving objects:  25% (44710/178839), 25.09 MiB | 7.14 MiB/sReceiving objects:  26% (46499/178839), 25.09 MiB | 7.14 MiB/sReceiving objects:  27% (48287/178839), 25.09 MiB | 7.14 MiB/sReceiving objects:  28% (50075/178839), 25.09 MiB | 7.14 MiB/sReceiving objects:  29% (51864/178839), 25.09 MiB | 7.14 MiB/sReceiving objects:  30% (53652/178839), 25.09 MiB | 7.14 MiB/sReceiving objects:  31% (55441/178839), 25.09 MiB | 7.14 MiB/sReceiving objects:  31% (55660/178839), 25.09 MiB | 7.14 MiB/sReceiving objects:  32% (57229/178839), 28.36 MiB | 7.07 MiB/sReceiving objects:  33% (59017/178839), 28.36 MiB | 7.07 MiB/sReceiving objects:  34% (60806/178839), 28.36 MiB | 7.07 MiB/sReceiving objects:  35% (62594/178839), 28.36 MiB | 7.07 MiB/sReceiving objects:  36% (64383/178839), 28.36 MiB | 7.07 MiB/sReceiving objects:  37% (66171/178839), 28.36 MiB | 7.07 MiB/sReceiving objects:  38% (67959/178839), 31.41 MiB | 6.96 MiB/sReceiving objects:  39% (69748/178839), 31.41 MiB | 6.96 MiB/sReceiving objects:  40% (71536/178839), 31.41 MiB | 6.96 MiB/sReceiving objects:  40% (72513/178839), 31.41 MiB | 6.96 MiB/sReceiving objects:  41% (73324/178839), 34.48 MiB | 6.79 MiB/sReceiving objects:  42% (75113/178839), 34.48 MiB | 6.79 MiB/sReceiving objects:  43% (76901/178839), 34.48 MiB | 6.79 MiB/sReceiving objects:  44% (78690/178839), 34.48 MiB | 6.79 MiB/sReceiving objects:  44% (79979/178839), 36.86 MiB | 6.17 MiB/sReceiving objects:  45% (80478/178839), 36.86 MiB | 6.17 MiB/sReceiving objects:  46% (82266/178839), 37.27 MiB | 5.50 MiB/sReceiving objects:  46% (83510/178839), 37.58 MiB | 4.93 MiB/sReceiving objects:  47% (84055/178839), 37.80 MiB | 4.23 MiB/sReceiving objects:  47% (84808/178839), 38.11 MiB | 2.34 MiB/sReceiving objects:  47% (85561/178839), 38.14 MiB | 1.69 MiB/sReceiving objects:  48% (85843/178839), 38.14 MiB | 1.69 MiB/sReceiving objects:  49% (87632/178839), 38.14 MiB | 1.69 MiB/sReceiving objects:  50% (89420/178839), 38.83 MiB | 1.29 MiB/sReceiving objects:  51% (91208/178839), 38.83 MiB | 1.29 MiB/sReceiving objects:  52% (92997/178839), 39.79 MiB | 941.00 KiB/sReceiving objects:  52% (94605/178839), 39.79 MiB | 941.00 KiB/sReceiving objects:  53% (94785/178839), 39.79 MiB | 941.00 KiB/sReceiving objects:  54% (96574/178839), 39.79 MiB | 941.00 KiB/sReceiving objects:  55% (98362/178839), 39.79 MiB | 941.00 KiB/sReceiving objects:  56% (100150/178839), 39.79 MiB | 941.00 KiB/sReceiving objects:  57% (101939/178839), 41.01 MiB | 755.00 KiB/sReceiving objects:  58% (103727/178839), 41.01 MiB | 755.00 KiB/sReceiving objects:  59% (105516/178839), 41.01 MiB | 755.00 KiB/sReceiving objects:  60% (107304/178839), 41.01 MiB | 755.00 KiB/sReceiving objects:  61% (109092/178839), 41.01 MiB | 755.00 KiB/sReceiving objects:  62% (110881/178839), 41.01 MiB | 755.00 KiB/sReceiving objects:  63% (112669/178839), 41.01 MiB | 755.00 KiB/sReceiving objects:  64% (114457/178839), 42.42 MiB | 942.00 KiB/sReceiving objects:  65% (116246/178839), 42.42 MiB | 942.00 KiB/sReceiving objects:  66% (118034/178839), 42.42 MiB | 942.00 KiB/sReceiving objects:  66% (119587/178839), 42.42 MiB | 942.00 KiB/sReceiving objects:  67% (119823/178839), 42.42 MiB | 942.00 KiB/sReceiving objects:  68% (121611/178839), 42.42 MiB | 942.00 KiB/sReceiving objects:  69% (123399/178839), 42.42 MiB | 942.00 KiB/sReceiving objects:  70% (125188/178839), 42.42 MiB | 942.00 KiB/sReceiving objects:  71% (126976/178839), 42.42 MiB | 942.00 KiB/sReceiving objects:  72% (128765/178839), 42.42 MiB | 942.00 KiB/sReceiving objects:  73% (130553/178839), 43.98 MiB | 1.15 MiB/s  Receiving objects:  74% (132341/178839), 43.98 MiB | 1.15 MiB/sReceiving objects:  75% (134130/178839), 43.98 MiB | 1.15 MiB/sReceiving objects:  76% (135918/178839), 43.98 MiB | 1.15 MiB/sReceiving objects:  77% (137707/178839), 43.98 MiB | 1.15 MiB/sReceiving objects:  78% (139495/178839), 43.98 MiB | 1.15 MiB/sReceiving objects:  79% (141283/178839), 43.98 MiB | 1.15 MiB/sReceiving objects:  80% (143072/178839), 45.70 MiB | 1.42 MiB/sReceiving objects:  81% (144860/178839), 45.70 MiB | 1.42 MiB/sReceiving objects:  82% (146648/178839), 45.70 MiB | 1.42 MiB/sReceiving objects:  83% (148437/178839), 45.70 MiB | 1.42 MiB/sReceiving objects:  83% (149121/178839), 45.70 MiB | 1.42 MiB/sReceiving objects:  84% (150225/178839), 45.70 MiB | 1.42 MiB/sReceiving objects:  85% (152014/178839), 45.70 MiB | 1.42 MiB/sReceiving objects:  86% (153802/178839), 45.70 MiB | 1.42 MiB/sReceiving objects:  87% (155590/178839), 45.70 MiB | 1.42 MiB/sReceiving objects:  88% (157379/178839), 47.64 MiB | 1.73 MiB/sReceiving objects:  89% (159167/178839), 47.64 MiB | 1.73 MiB/sReceiving objects:  90% (160956/178839), 47.64 MiB | 1.73 MiB/sReceiving objects:  91% (162744/178839), 47.64 MiB | 1.73 MiB/sReceiving objects:  92% (164532/178839), 47.64 MiB | 1.73 MiB/sReceiving objects:  93% (166321/178839), 47.64 MiB | 1.73 MiB/sReceiving objects:  94% (168109/178839), 47.64 MiB | 1.73 MiB/sReceiving objects:  95% (169898/178839), 47.64 MiB | 1.73 MiB/sReceiving objects:  96% (171686/178839), 47.64 MiB | 1.73 MiB/sReceiving objects:  97% (173474/178839), 47.64 MiB | 1.73 MiB/sReceiving objects:  98% (175263/178839), 47.64 MiB | 1.73 MiB/sReceiving objects:  99% (177051/178839), 49.76 MiB | 2.45 MiB/sReceiving objects:  99% (178152/178839), 49.76 MiB | 2.45 MiB/sremote: Total 178839 (delta 2), reused 2 (delta 0), pack-reused 178832        
+Receiving objects: 100% (178839/178839), 49.76 MiB | 2.45 MiB/sReceiving objects: 100% (178839/178839), 50.55 MiB | 3.60 MiB/s, done.
+Resolving deltas:   0% (0/128677)Resolving deltas:   1% (2085/128677)Resolving deltas:   2% (2579/128677)Resolving deltas:   3% (3862/128677)Resolving deltas:   4% (5287/128677)Resolving deltas:   5% (6486/128677)Resolving deltas:   6% (7726/128677)Resolving deltas:   7% (9024/128677)Resolving deltas:   8% (10335/128677)Resolving deltas:   9% (11585/128677)Resolving deltas:  10% (12884/128677)Resolving deltas:  11% (14172/128677)Resolving deltas:  12% (15468/128677)Resolving deltas:  13% (16741/128677)Resolving deltas:  14% (18112/128677)Resolving deltas:  15% (19398/128677)Resolving deltas:  16% (20605/128677)Resolving deltas:  17% (21886/128677)Resolving deltas:  18% (23163/128677)Resolving deltas:  19% (24523/128677)Resolving deltas:  20% (25742/128677)Resolving deltas:  21% (27030/128677)Resolving deltas:  22% (28313/128677)Resolving deltas:  23% (29604/128677)Resolving deltas:  24% (30940/128677)Resolving deltas:  25% (32175/128677)Resolving deltas:  26% (33465/128677)Resolving deltas:  27% (34749/128677)Resolving deltas:  28% (36042/128677)Resolving deltas:  29% (37555/128677)Resolving deltas:  30% (38611/128677)Resolving deltas:  31% (40494/128677)Resolving deltas:  32% (41250/128677)Resolving deltas:  33% (42497/128677)Resolving deltas:  34% (43756/128677)Resolving deltas:  35% (45054/128677)Resolving deltas:  36% (46387/128677)Resolving deltas:  37% (47635/128677)Resolving deltas:  38% (48915/128677)Resolving deltas:  39% (50192/128677)Resolving deltas:  40% (51784/128677)Resolving deltas:  41% (52763/128677)Resolving deltas:  42% (54045/128677)Resolving deltas:  43% (55357/128677)Resolving deltas:  44% (56910/128677)Resolving deltas:  45% (57940/128677)Resolving deltas:  46% (59491/128677)Resolving deltas:  47% (60503/128677)Resolving deltas:  48% (62150/128677)Resolving deltas:  49% (63191/128677)Resolving deltas:  50% (64340/128677)Resolving deltas:  51% (65631/128677)Resolving deltas:  52% (66968/128677)Resolving deltas:  53% (68201/128677)Resolving deltas:  54% (69503/128677)Resolving deltas:  55% (70780/128677)Resolving deltas:  56% (72090/128677)Resolving deltas:  57% (73351/128677)Resolving deltas:  58% (74652/128677)Resolving deltas:  59% (75950/128677)Resolving deltas:  60% (77246/128677)Resolving deltas:  61% (78494/128677)Resolving deltas:  62% (79811/128677)Resolving deltas:  63% (81081/128677)Resolving deltas:  64% (82357/128677)Resolving deltas:  65% (83655/128677)Resolving deltas:  66% (85020/128677)Resolving deltas:  67% (86235/128677)Resolving deltas:  68% (87521/128677)Resolving deltas:  69% (88840/128677)Resolving deltas:  70% (90088/128677)Resolving deltas:  71% (91428/128677)Resolving deltas:  72% (92804/128677)Resolving deltas:  73% (93946/128677)Resolving deltas:  74% (95272/128677)Resolving deltas:  75% (96627/128677)Resolving deltas:  76% (97797/128677)Resolving deltas:  77% (99085/128677)Resolving deltas:  77% (100149/128677)Resolving deltas:  78% (100778/128677)Resolving deltas:  79% (102313/128677)Resolving deltas:  80% (103032/128677)Resolving deltas:  81% (104425/128677)Resolving deltas:  82% (105532/128677)Resolving deltas:  83% (106861/128677)Resolving deltas:  84% (108091/128677)Resolving deltas:  85% (109406/128677)Resolving deltas:  86% (110666/128677)Resolving deltas:  87% (112001/128677)Resolving deltas:  88% (113242/128677)Resolving deltas:  89% (114526/128677)Resolving deltas:  90% (115947/128677)Resolving deltas:  91% (117099/128677)Resolving deltas:  92% (118399/128677)Resolving deltas:  93% (119674/128677)Resolving deltas:  94% (120994/128677)Resolving deltas:  95% (122316/128677)Resolving deltas:  96% (123579/128677)Resolving deltas:  97% (124862/128677)Resolving deltas:  98% (126119/128677)Resolving deltas:  99% (127437/128677)Resolving deltas: 100% (128677/128677)Resolving deltas: 100% (128677/128677), done.
+gallium$ du -s M2
+240440	M2
+gallium$ cd
+gallium$ cd ~/src/M2/M2.git/M2/
+gallium$ ls
+BSDmakefile		INSTALL			Makefile		config			files			submodules
+BUILD			INSTALL.mac		README			configure		include			usr-build
+CMakeLists.txt		LICENSING-NOTES		autom4te.cache		configure.ac		install-scripts.awk	util
+GNUmakefile.in		Macaulay2		check-configure		distributions		libraries
+gallium$ ./configure --help
+`configure' configures Macaulay2 1.15.0.1 to adapt to many kinds of systems.
+
+Usage: ./configure [OPTION]... [VAR=VALUE]...
+
+To assign environment variables (e.g., CC, CFLAGS...), specify them as
+VAR=VALUE.  See below for descriptions of some of the useful variables.
+
+Defaults for the options are specified in brackets.
+
+Configuration:
+  -h, --help              display this help and exit
+      --help=short        display options specific to this package
+      --help=recursive    display the short help of all the included packages
+  -V, --version           display version information and exit
+  -q, --quiet, --silent   do not print `checking ...' messages
+      --cache-file=FILE   cache test results in FILE [disabled]
+  -C, --config-cache      alias for `--cache-file=config.cache'
+  -n, --no-create         do not create output files
+      --srcdir=DIR        find the sources in DIR [configure dir or `..']
+
+Installation directories:
+  --prefix=PREFIX         install architecture-independent files in PREFIX
+                          [/usr/local]
+  --exec-prefix=EPREFIX   install architecture-dependent files in EPREFIX
+                          [PREFIX]
+
+By default, `make install' will install all the files in
+`/usr/local/bin', `/usr/local/lib' etc.  You can specify
+an installation prefix other than `/usr/local' using `--prefix',
+for instance `--prefix=$HOME'.
+
+For better control, use the options below.
+
+Fine tuning of the installation directories:
+  --bindir=DIR            user executables [EPREFIX/bin]
+  --sbindir=DIR           system admin executables [EPREFIX/sbin]
+  --libexecdir=DIR        program executables [EPREFIX/libexec]
+  --sysconfdir=DIR        read-only single-machine data [PREFIX/etc]
+  --sharedstatedir=DIR    modifiable architecture-independent data [PREFIX/com]
+  --localstatedir=DIR     modifiable single-machine data [PREFIX/var]
+  --libdir=DIR            object code libraries [EPREFIX/lib]
+  --includedir=DIR        C header files [PREFIX/include]
+  --oldincludedir=DIR     C header files for non-gcc [/usr/include]
+  --datarootdir=DIR       read-only arch.-independent data root [PREFIX/share]
+  --datadir=DIR           read-only architecture-independent data [DATAROOTDIR]
+  --infodir=DIR           info documentation [DATAROOTDIR/info]
+  --localedir=DIR         locale-dependent data [DATAROOTDIR/locale]
+  --mandir=DIR            man documentation [DATAROOTDIR/man]
+  --docdir=DIR            documentation root [DATAROOTDIR/doc/Macaulay2]
+  --htmldir=DIR           html documentation [DOCDIR]
+  --dvidir=DIR            dvi documentation [DOCDIR]
+  --pdfdir=DIR            pdf documentation [DOCDIR]
+  --psdir=DIR             ps documentation [DOCDIR]
+
+System types:
+  --build=BUILD     configure for building on BUILD [guessed]
+  --host=HOST       cross-compile to build programs to run on HOST [BUILD]
+
+Optional Features:
+  --disable-option-checking  ignore unrecognized --enable/--with options
+  --disable-FEATURE       do not include FEATURE (same as --enable-FEATURE=no)
+  --enable-FEATURE[=ARG]  include FEATURE [ARG=yes]
+  --disable-optimize      disable optimization
+  --enable-ntl-wizard     enable running the NTL wizard
+  --enable-debug          enable debugging (and disable stripping)
+  --enable-strip          strip the symbol table from the Macaulay2 binary
+  --enable-static         enable static linking
+  --enable-memdebug       enable memory allocation debugging
+  --enable-encap          encapsulate all files in a subdirectory at
+                          installation time
+  --enable-xcode          create Macaulay2/d/interpret.a for use with xcode
+  --disable-frobby        do not download, compile, and link with frobby
+                          library
+  --disable-pari          do not download, compile, and link with pari library
+  --disable-xml           do not link with xml library
+  --enable-altivec        compile with "-faltivec" option
+  --disable-fc-lib-ldflags
+                          do not use extra libraries for linking with Fortran
+                          (the default under Cygwin)
+  --enable-profile        enable profiling (and disable stripping)
+  --enable-compress=gz|bz2
+                          compression method for tarball
+  --enable-experimental-code
+                          enable experimental code
+  --enable-tarfile        prepare binary and source packages as compressed tar
+                          files
+  --enable-tarlibs        include symbolic links to needed shared libraries
+                          for tar
+  --disable-shared        disable building of shared libraries
+  --enable-auto-instantiation,enable automatic instantiation of C++ templates (it uses -frepo option to g++)
+
+  --disable-implicit-templates,disable implicit instantiation of C++ templates (it uses -fno-implicit-templates option to g++)
+
+  --enable-development    build a development version
+  --disable-dumpdata      do not cache data with dumpdata
+  --enable-cygwin         prepare a binary package for cygwin
+  --enable-deb            prepare a *.deb package (for debian, ubuntu, ...)
+  --enable-freebsd        prepare a package file for freebsd
+  --enable-rpm            prepare a *.rpm package (for red hat based systems)
+  --enable-dmg            prepare a *.dmg package (for Mac OS)
+  --program-suffix=...    suffix to append to executable name M2
+  --disable-openmp        do not use OpenMP
+  --disable-gfan          do not build gfan program
+  --disable-csdp          do not build csdp program
+  --enable-build-libraries=...
+                          list of libraries, submodules, and programs to build
+                          from downloaded source code (e.g., gc gdbm mpir mpfr
+                          pari readline ntl gftables factory lapack frobby
+                          glpk cddlib givaro fflas_ffpack linbox boost mpc qd
+                          mpack 4ti2 gfan normaliz csdp nauty cddplus lrslib)
+  --enable-download       enable automatic downloading of needed third-party
+                          libraries
+  --enable-linbox         enable building the linbox library and linking with
+                          it
+  --enable-fplll          enable building the fplll library and linking with
+                          it
+  --enable-mpack          enable building the mpack library, linking with it,
+                          and compiling the experimental code that uses it
+  --disable-building      disable automatic building of libraries
+  --enable-common-staging-area
+                          use the common staging area
+
+Optional Packages:
+  --with-PACKAGE[=ARG]    use PACKAGE [ARG=yes]
+  --without-PACKAGE       do not use PACKAGE (same as --with-PACKAGE=no)
+  --with-issue=...,specify the OS issue (e.g., Ubuntu-7.10)
+
+  --with-python           link with libpython
+  --with-mysql            link with mysql
+  --with-libpython=...    specify the python library ($LIBPYTHON)
+  --with-developer=...    specify the name of the developer ($USER)
+  --with-newline=...      crlf, cr, or lf (the default)
+  --with-gtest-source-path
+                          location of the Google test sources, defaults to
+                          /usr/src/gtest
+  --with-gtest-include-path
+                          location of the Google test headers
+  --with-unbuilt-programs=...
+                          list of programs not to build from downloaded source
+                          code (e.g., $PROGLIST)
+  --with-mpir-config-options=...
+                          specify additional options for the configure script
+                          used with mpir
+  --with-staging-area=... directory for pre-installation of
+                          architecture-independent files (usr-dist)
+
+Some influential environment variables:
+  CC          C compiler command
+  CFLAGS      C compiler flags
+  LDFLAGS     linker flags, e.g. -L<lib dir> if you have libraries in a
+              nonstandard directory <lib dir>
+  LIBS        libraries to pass to the linker, e.g. -l<library>
+  CPPFLAGS    (Objective) C/C++ preprocessor flags, e.g. -I<include dir> if
+              you have headers in a nonstandard directory <include dir>
+  CXX         C++ compiler command
+  CXXFLAGS    C++ compiler flags
+  YACC        The `Yet Another Compiler Compiler' implementation to use.
+              Defaults to the first program found out of: `bison -y', `byacc',
+              `yacc'.
+  YFLAGS      The list of arguments that will be passed by default to $YACC.
+              This script will default YFLAGS to the empty string to avoid a
+              default value of `-d' given by some make applications.
+  CPP         C preprocessor
+  CXXCPP      C++ preprocessor
+  FC          Fortran compiler command
+  FCFLAGS     Fortran compiler flags
+  GFTABLESDIR path to gftables directory if factory is already installed
+
+Use these variables to override the choices made by `configure' or to help
+it to find libraries and programs with nonstandard names/locations.
+
+Report bugs to <Macaulay2@math.uiuc.edu>.
+Macaulay2 home page: <http://macaulay2.com/>.
+gallium$ pwd
+/Users/dan/src/M2/M2.git/M2
+gallium$ cd /tmp
+gallium$ mkdir build-dir
+gallium$ cd build-dir/
+gallium$ /Users/dan/src/M2/M2.git/M2/configure
+configure: configuring Macaulay2 version 1.15.0.1
+relevant environment variable values, if any:
+   PKG_CONFIG_PATH = /Applications/DjView.app/Contents/lib/pkgconfig:/usr/local/lib/pkgconfig:/usr/lib/pkgconfig:/opt/X11/lib/pkgconfig:
+configure: operating system information:
+   OS    = Darwin
+   ISSUE = MacOS-10.15.2
+checking for gmake... gmake
+checking for pkg-config... pkg-config
+checking for etags... etags
+checking for lintian... no
+checking for otool... otool
+checking for fakeroot... no
+checking for rpmlint... no
+checking for gtar... gtar
+checking for gfind... no
+checking for find... find
+checking for objdump... objdump
+checking for objcopy... no
+checking for ldd... no
+checking for ar... ar
+checking for as... as
+checking for dlltool... no
+checking for ld... ld
+checking for strip... strip
+checking whether strip accepts the remove-section option... no
+checking whether gmake is GNU make... yes
+checking whether GNU make is recent enough... yes
+checking whether gtar is GNU tar... yes
+checking build system type... x86_64-apple-darwin19.2.0
+checking host system type... x86_64-apple-darwin19.2.0
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for bison... bison -y
+checking for ranlib... ranlib
+checking for a BSD-compatible install... /usr/local/bin/ginstall -c
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+configure: checking for C compiler for build environment...
+checking how to run the C preprocessor... gcc -E
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking how to run the C preprocessor... gcc -E
+configure: checking for C compiler for build environment... done
+checking for gcc version... 4.2.1
+checking whether exceptions are caught... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking size of int *... 8
+checking size of long... 8
+checking order of construction implemented by the linker... link order o1a2o3a4, construction order o1a2o3a4, obj order LR, lib order LR
+checking whether time.h and sys/time.h may both be included... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking io.h usability... no
+checking io.h presence... no
+checking for io.h... no
+checking linux/personality.h usability... no
+checking linux/personality.h presence... no
+checking for linux/personality.h... no
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking elf.h usability... no
+checking elf.h presence... no
+checking for elf.h... no
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking for stdlib.h... (cached) yes
+checking syscall.h usability... no
+checking syscall.h presence... no
+checking for syscall.h... no
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking assert.h usability... yes
+checking assert.h presence... yes
+checking for assert.h... yes
+checking alloca.h usability... yes
+checking alloca.h presence... yes
+checking for alloca.h... yes
+checking malloc.h usability... no
+checking malloc.h presence... no
+checking for malloc.h... no
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking regex.h usability... yes
+checking regex.h presence... yes
+checking for regex.h... yes
+checking winsock2.h usability... no
+checking winsock2.h presence... no
+checking for winsock2.h... no
+checking for library containing clock_gettime... none required
+checking for library containing socket... none required
+checking for library containing hstrerror... none required
+checking for library containing dlopen... none required
+checking for library containing gethostbyname... none required
+checking tbb/tbb.h usability... no
+checking tbb/tbb.h presence... no
+checking for tbb/tbb.h... no
+checking for herror... yes
+checking for error... no
+checking for backtrace... yes
+checking for clock_gettime... yes
+checking for __environ... no
+checking for _environ... no
+checking for environ... yes
+checking for _setmode... no
+checking for getaddrinfo... yes
+checking for hstrerror... yes
+checking for sync... yes
+checking for getpgrp... yes
+checking for setpgid... yes
+checking for fchmod... yes
+checking for pipe... yes
+checking for waitpid... yes
+checking for setrlimit... yes
+checking for alarm... yes
+checking for fork... yes
+checking for sigprocmask... yes
+checking for kill... yes
+checking for longjmp... yes
+checking for siglongjmp... yes
+checking for sigaction... yes
+checking for wait4... yes
+checking for readlink... yes
+checking for lstat... yes
+checking for realpath... yes
+checking for mkdir... yes
+checking for link... yes
+checking for symlink... yes
+checking for socket... yes
+checking for accept... yes
+checking for fcntl... yes
+checking for personality... no
+checking for ioctl... yes
+checking types of arguments for accept()... int accept(int, struct sockaddr *, socklen_t *)
+checking whether ADDR_NO_RANDOMIZE is declared... no
+checking whether herror is declared... no
+checking whether __environ is declared... no
+checking whether _environ is declared... no
+checking whether environ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking NTL/tools.h usability... yes
+checking NTL/tools.h presence... yes
+checking for NTL/tools.h... yes
+checking whether the C compiler accepts the __thread storage attribute... yes
+checking for gfortran... gfortran
+checking whether we are using the GNU Fortran compiler... yes
+checking whether gfortran accepts -g... yes
+configure: by default, adding linker flags to link with Fortran libraries
+checking how to get verbose linking output from gfortran... -v
+checking for Fortran libraries of gfortran...  -L/usr/local/Cellar/gcc/9.2.0_2/lib/gcc/9/gcc/x86_64-apple-darwin19/9.2.0 -L/usr/local/Cellar/gcc/9.2.0_2/lib/gcc/9/gcc/x86_64-apple-darwin19/9.2.0/../../.. -lgfortran -lquadmath -lm
+checking for dummy main to link with Fortran libraries... none
+checking for Fortran name-mangling scheme... lower case, underscore, no extra underscore
+checking how to get verbose linking output from gfortran... (cached) -v
+checking for Fortran libraries of gfortran... (cached)  -L/usr/local/Cellar/gcc/9.2.0_2/lib/gcc/9/gcc/x86_64-apple-darwin19/9.2.0 -L/usr/local/Cellar/gcc/9.2.0_2/lib/gcc/9/gcc/x86_64-apple-darwin19/9.2.0/../../.. -lgfortran -lquadmath -lm
+checking for library containing pthread_mutex_trylock... none required
+configure: disabling the building of shared libraries under Mac OS X
+configure: default dumpdata option for Darwin operating system used, value: no
+fatal: not a git repository (or any of the parent directories): .git
+checking whether g++ gets confused about C linkage in system library files... no
+checking for g++ option to support OpenMP... -Xpreprocessor -fopenmp -lomp
+configure: mpir is being built (to replace gmp), so we will build pari
+checking gtest/gtest.h usability... no
+checking gtest/gtest.h presence... no
+checking for gtest/gtest.h... no
+checking for /usr/src/gtest/src/gtest-all.cc... no
+checking for /usr/src/gtest/src/gtest_main.cc... no
+checking for wget... wget
+checking for curl... curl
+checking for library containing tgoto... -lncurses
+checking readline/readline.h usability... yes
+checking readline/readline.h presence... yes
+checking for readline/readline.h... yes
+checking for library containing rl_set_prompt... -lreadline
+checking for library containing rl_completion_matches... none required
+checking for library containing readline... none required
+checking for library containing add_history... none required
+checking whether readline library is new enough (version at least 6)... no, will build it
+configure: readline library will be compiled
+checking for library containing MEMTAILOR_VERSION_STRING... no
+checking memtailor.h usability... no
+checking memtailor.h presence... no
+checking for memtailor.h... no
+checking for library containing MATHIC_VERSION_STRING... no
+checking mathic.h usability... no
+checking mathic.h presence... no
+checking for mathic.h... no
+checking for library containing MATHICGB_VERSION_STRING... no
+checking mathicgb.h usability... no
+checking mathicgb.h presence... no
+checking for mathicgb.h... no
+checking boost/version.hpp usability... yes
+checking boost/version.hpp presence... yes
+checking for boost/version.hpp... yes
+checking whether package atomic_ops is provided... yes
+checking for library containing gdbm_close... -lgdbm
+checking gdbm.h usability... yes
+checking gdbm.h presence... yes
+checking for gdbm.h... yes
+checking whether the Accelerate framework for lapack is available... yes
+configure: pkg-config: will search for include files also in -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2
+checking libxml2/libxml/xmlexports.h usability... yes
+checking libxml2/libxml/xmlexports.h presence... yes
+checking for libxml2/libxml/xmlexports.h... yes
+configure: libxml found in libxml2: will search for include files also in /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2
+checking libxml/xmlexports.h usability... yes
+checking libxml/xmlexports.h presence... yes
+checking for libxml/xmlexports.h... yes
+checking libxml/parser.h usability... yes
+checking libxml/parser.h presence... yes
+checking for libxml/parser.h... yes
+checking for library containing pow... none required
+checking for library containing gzopen... -lz
+checking for library containing lzma_end... -llzma
+checking for library containing xmlNewNode... -lxml2
+checking whether nm accepts the demangle option... yes
+checking whether getaddrinfo can handle numeric service (port) numbers... yes
+checking whether __builtin_return_address accepts a non-zero argument... yes
+checking whether gcc accepts -Wframe-address... no
+checking whether gcc accepts -Wstrict-aliasing... yes
+checking whether gcc accepts -Wfatal-errors... yes
+checking whether gcc accepts -Wmismatched-tags... yes
+checking whether gcc accepts -Wparentheses-equality... yes
+checking whether gcc accepts -Wl,-z,noexecstack... no
+checking whether gcc accepts -Wl,--enable-auto-import... no
+checking whether gcc accepts -Wl,-Map,conftest.mapfile... no
+configure: using BUILDLIBLIST  =  gc mpir mpfr pari readline ntl flint factory frobby glpk cddlib givaro mpc gtest
+configure: using BUILDSUBLIST  =  memtailor mathic mathicgb fflas_ffpack
+configure: using BUILDPROGLIST =  4ti2 gfan normaliz csdp nauty lrslib gftables topcom cohomcalg
+configure: using BUILDLIST     =  gc mpir mpfr pari readline ntl flint factory frobby glpk cddlib givaro mpc gtest 4ti2 gfan normaliz csdp nauty lrslib gftables topcom cohomcalg
+configure: using BUILD_ALWAYS  = factory ntl flint gc frobby pari cddlib givaro glpk mpc mpfr mpir 
+configure: link using:
+configure:      BUILTLIBS          = -lfactory   -lntl -lgivaro -lflint -lmpc -lgc -lpthread -lmpfr -lfrobby -lpari -lgmpxx -lgmp -lmathicgb -lmathic -lmemtailor -lreadline -lhistory 
+configure:      LINALGLIBS         = -framework Accelerate  
+configure:      LIBS_STATIC        = 
+configure:      LIBS_EITHER        =  -lxml2 -llzma -lz -framework Accelerate -lgdbm -lreadline
+configure:      LIBS_DYNAMIC       =  -lncurses
+configure:      FCLIBS_STATIC      = 
+configure:      FCLIBS_DYNAMIC     = 
+configure: using CC                = gcc
+configure: using CPP               = gcc -E
+configure: using CPPFLAGS          = -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG
+configure: using CFLAGS            = -std=gnu11 -g3 -O2
+configure: using CXX               = g++
+configure: using CXXFLAGS          = -std=gnu++11 -g3 -O2 -Wno-mismatched-tags
+configure: using FC                = gfortran
+configure: using AR                = ar
+configure: using RANLIB            = ranlib
+configure: using LDFLAGS           =  -g3
+configure: using CC_FOR_BUILD      = gcc
+configure: using LDFLAGS_FOR_BUILD =  -g3
+configure: with  ISSUE             = MacOS-10.15.2
+configure: with  NODENAME          = gallium
+configure: with  OS REL            = Darwin 19.2.0
+configure: with  ARCH              = x86_64
+configure: with  OPTIMIZE          = yes
+configure: with  DEBUG             = no
+configure: with  GIT_DESCRIPTION   = unknown
+configure: staging area for common files: /tmp/build-dir/usr-dist/common
+configure: staging area for architecture dependent files: /tmp/build-dir/usr-dist/x86_64-Darwin-MacOS-10.15.2
+configure: creating ./config.status
+config.status: creating GNUmakefile
+config.status: creating check-configure/Makefile
+config.status: creating include/config.Makefile
+config.status: creating include/configuration
+config.status: creating distributions/Makefile
+config.status: creating distributions/install/Makefile
+config.status: creating distributions/top/Makefile
+config.status: creating distributions/top/INSTALL
+config.status: creating distributions/top/preremove
+config.status: creating distributions/top/postinstall
+config.status: creating distributions/tar/Makefile
+config.status: creating distributions/dmg/Makefile
+config.status: creating distributions/rpm/Makefile
+config.status: creating distributions/rpm/Macaulay2-body.spec
+config.status: creating distributions/rpm/Macaulay2-common-body.spec
+config.status: creating distributions/cygwin/Makefile
+config.status: creating distributions/cygwin/Macaulay2.README
+config.status: creating distributions/cygwin/setup.hint-base
+config.status: creating distributions/cygwin/server/Makefile
+config.status: creating distributions/cygwin/postinstall.sh
+config.status: creating distributions/cygwin/preremove.sh
+config.status: creating distributions/cygwin/server/Macaulay2-icons/setup.hint
+config.status: creating distributions/freebsd/Makefile
+config.status: creating distributions/freebsd/post-install
+config.status: creating distributions/freebsd/post-deinstall
+config.status: creating distributions/deb/Makefile
+config.status: creating distributions/deb/macaulay2-common/postrm
+config.status: creating distributions/deb/macaulay2-common/postinst
+config.status: creating distributions/deb/macaulay2-common/prerm
+config.status: creating distributions/deb/macaulay2-common/preinst
+config.status: creating distributions/deb/macaulay2/postrm
+config.status: creating distributions/deb/macaulay2/postinst
+config.status: creating distributions/deb/macaulay2/prerm
+config.status: creating distributions/deb/macaulay2/preinst
+config.status: creating libraries/Makefile
+config.status: creating libraries/cohomcalg/Makefile
+config.status: creating libraries/topcom/Makefile
+config.status: creating libraries/atomic_ops/Makefile
+config.status: creating libraries/Makefile.library
+config.status: creating libraries/M2/Makefile
+config.status: creating libraries/gc/Makefile
+config.status: creating libraries/gdbm/Makefile
+config.status: creating libraries/flint/Makefile
+config.status: creating libraries/gmp/Makefile
+config.status: creating libraries/mpfr/Makefile
+config.status: creating libraries/mpir/Makefile
+config.status: creating libraries/boost/Makefile
+config.status: creating libraries/mpack/Makefile
+config.status: creating libraries/gtest/Makefile
+config.status: creating libraries/qd/Makefile
+config.status: creating libraries/mpc/Makefile
+config.status: creating libraries/4ti2/Makefile
+config.status: creating libraries/gfan/Makefile
+config.status: creating libraries/fflas_ffpack/Makefile
+config.status: creating libraries/nauty/Makefile
+config.status: creating libraries/cddplus/Makefile
+config.status: creating libraries/lrslib/Makefile
+config.status: creating libraries/cddlib/Makefile
+config.status: creating libraries/glpk/Makefile
+config.status: creating libraries/linbox/Makefile
+config.status: creating libraries/givaro/Makefile
+config.status: creating libraries/fplll/Makefile
+config.status: creating libraries/polymake/Makefile
+config.status: creating libraries/normaliz/Makefile
+config.status: creating libraries/csdp/Makefile
+config.status: creating libraries/pari/Makefile
+config.status: creating libraries/readline/Makefile
+config.status: creating libraries/ntl/Makefile
+config.status: creating libraries/libtool/Makefile
+config.status: creating libraries/gftables/Makefile
+config.status: creating libraries/factory/Makefile
+config.status: creating libraries/frobby/Makefile
+config.status: creating libraries/lapack/Makefile
+config.status: creating Macaulay2/Makefile
+config.status: creating Macaulay2/README
+config.status: creating Macaulay2/packages/SCSCP/docinput/Makefile
+config.status: creating Macaulay2/book/Makefile
+config.status: creating Macaulay2/c/Makefile
+config.status: creating Macaulay2/d/Makefile
+config.status: creating Macaulay2/d/Makefile.files
+config.status: creating Macaulay2/d/startup.m2
+config.status: creating Macaulay2/dumpdata/Makefile
+config.status: creating Macaulay2/bin/Makefile
+config.status: creating Macaulay2/bin/M2
+config.status: creating Macaulay2/e/Makefile
+config.status: creating Macaulay2/e/Makefile.common
+config.status: creating Macaulay2/e/unit-tests/Makefile
+config.status: creating Macaulay2/emacs/M2-init.el
+config.status: creating Macaulay2/emacs/Makefile
+config.status: creating Macaulay2/html-check-links/Makefile
+config.status: creating Macaulay2/packages/Style/Makefile
+config.status: creating Macaulay2/m2/Makefile
+config.status: creating Macaulay2/m2/version.m2
+config.status: creating Macaulay2/man/Makefile
+config.status: creating Macaulay2/man/M2.1
+config.status: creating Macaulay2/packages/ComputationsBook/Makefile
+config.status: creating Macaulay2/packages/ComputationsBook/Makefile.chapter
+config.status: creating Macaulay2/packages/ComputationsBook/completeIntersections/Makefile
+config.status: creating Macaulay2/packages/ComputationsBook/constructions/Makefile
+config.status: creating Macaulay2/packages/ComputationsBook/d-modules/Makefile
+config.status: creating Macaulay2/packages/ComputationsBook/exterior-algebra/Makefile
+config.status: creating Macaulay2/packages/ComputationsBook/geometry/Makefile
+config.status: creating Macaulay2/packages/ComputationsBook/monomialIdeals/Makefile
+config.status: creating Macaulay2/packages/ComputationsBook/preface/Makefile
+config.status: creating Macaulay2/packages/ComputationsBook/programming/Makefile
+config.status: creating Macaulay2/packages/ComputationsBook/schemes/Makefile
+config.status: creating Macaulay2/packages/ComputationsBook/solving/Makefile
+config.status: creating Macaulay2/packages/ComputationsBook/toricHilbertScheme/Makefile
+config.status: creating Macaulay2/packages/ComputationsBook/varieties/Makefile
+config.status: creating Macaulay2/packages/Makefile
+config.status: creating Macaulay2/regex/Makefile
+config.status: creating Macaulay2/srcdir
+config.status: creating Macaulay2/system/Makefile
+config.status: creating Macaulay2/packages/Macaulay2Doc/test/Makefile
+config.status: creating Macaulay2/packages/Macaulay2Doc/test/Makefile.test
+config.status: creating Macaulay2/packages/Macaulay2Doc/test/engine/Makefile
+config.status: creating Macaulay2/packages/Macaulay2Doc/test/slow/Makefile
+config.status: creating Macaulay2/packages/Macaulay2Doc/test/gigantic/Makefile
+config.status: creating Macaulay2/packages/Macaulay2Doc/test/goals/Makefile
+config.status: creating Macaulay2/packages/Macaulay2Doc/test/quarantine/Makefile
+config.status: creating Macaulay2/tests/rationality/Makefile
+config.status: creating Macaulay2/tests/Makefile
+config.status: creating Macaulay2/util/Makefile
+config.status: creating include/M2/config.h
+gallium$ du -s .
+2224	.
+gallium$ pwd
+/tmp/build-dir
+gallium$ make
+make: Entering directory '/private/tmp/build-dir'
+: "checking for strings that look like undefined configure variables in all *.in files..."
+: creating or removing symbolic link to common staging area, if necessary,
+: based on comparision of these directories:
+:                      pre_prefix : /tmp/build-dir/usr-dist/common
+: abs_builddir/usr-dist/common : /tmp/build-dir/usr-dist/common
+rm -f srcdir .link-test
+echo "/Users/dan/src/M2/M2.git/M2/" >srcdir
+rm -f M2
+(echo '#! /bin/sh'; echo 'exec /tmp/build-dir/usr-dist/x86_64-Darwin-MacOS-10.15.2/bin/M2 "$@"') >M2
+chmod a+x M2
+make -C libraries all
+make[1]: Entering directory '/private/tmp/build-dir/libraries'
+make -C gc fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/gc'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/gc'
+make -C mpir fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/mpir'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/mpir'
+make -C mpfr fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/mpfr'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/mpfr'
+make -C pari fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/pari'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/pari'
+make -C readline fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/readline'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/readline'
+make -C ntl fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/ntl'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/ntl'
+make -C flint fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/flint'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/flint'
+make -C factory fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/factory'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/factory'
+make -C frobby fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/frobby'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/frobby'
+make -C glpk fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/glpk'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/glpk'
+make -C cddlib fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/cddlib'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/cddlib'
+make -C givaro fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/givaro'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/givaro'
+make -C mpc fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/mpc'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/mpc'
+make -C gtest fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/gtest'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/gtest'
+make -C 4ti2 fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/4ti2'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/4ti2'
+make -C gfan fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/gfan'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/gfan'
+make -C normaliz fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/normaliz'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/normaliz'
+make -C csdp fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/csdp'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/csdp'
+make -C nauty fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/nauty'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/nauty'
+make -C lrslib fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/lrslib'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/lrslib'
+make -C gftables fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/gftables'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/gftables'
+make -C topcom fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/topcom'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/topcom'
+make -C cohomcalg fetch
+make[2]: Entering directory '/private/tmp/build-dir/libraries/cohomcalg'
+make[2]: Nothing to be done for 'fetch'.
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/cohomcalg'
+make -C gc all
+make[2]: Entering directory '/private/tmp/build-dir/libraries/gc'
+if [ -d build -a -d build-old/build ] ; \
+    then echo please remove or move build-old/build out of the way ; \
+         exit 1 ; \
+    fi
+if [ -d build ] ; then mv build build-old ; fi
+mkdir build
+cd build && gtar xf /Users/dan/src/M2/M2.git/M2/BUILD/tarfiles/gc-8.0.4.tar.gz --gzip
+cd build && for i in /Users/dan/src/M2/M2.git/M2/libraries/gc/patch-8.0.4 ; do patch --batch -p0 < $i ; done
+patching file gc-8.0.4/darwin_stop_world.c
+touch .patched-8.0.4
++ set +x
+make: Entering directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
++ :
++ ./configure --prefix=/tmp/build-dir/usr-host AR=ar AS=as DLLTOOL=false OBJDUMP=objdump STRIP=strip 'CXXFLAGS=-std=gnu++11 -g3 -O2 -Wno-mismatched-tags -w' 'CFLAGS=-std=gnu11 -g3 -O2 -w' FFLAGS=-O2 FCFLAGS=-O2 TARGET_ARCH= 'CPPFLAGS=-I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG' CC=gcc CXX=g++ 'LDFLAGS=-L/tmp/build-dir/usr-host/lib  -L/tmp/build-dir/submodules/memtailor/.libs  -L/tmp/build-dir/submodules/mathic/.libs  -L/tmp/build-dir/submodules/mathicgb/.libs -g3 -headerpad_max_install_names' LOADLIBES= LDLIBS= --enable-cplusplus --enable-threads=posix --disable-shared --enable-static --enable-parallel-mark --enable-large-config --disable-gcj-support --disable-java-finalization --cache-file=/dev/null
+checking build system type... x86_64-apple-darwin19.2.0
+checking host system type... x86_64-apple-darwin19.2.0
+checking target system type... x86_64-apple-darwin19.2.0
+checking GC version numbers... major=8 minor=0                 micro=4
+checking for a BSD-compatible install... /usr/local/bin/ginstall -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/local/bin/gmkdir -p
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... rm: conftest.dSYM: is a directory
+yes
+checking dependency style of gcc... gcc3
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking dependency style of gcc... gcc3
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... rm: conftest.dSYM: is a directory
+BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 196608
+checking how to convert x86_64-apple-darwin19.2.0 file names to x86_64-apple-darwin19.2.0 format... func_convert_file_noop
+checking how to convert x86_64-apple-darwin19.2.0 file names to toolchain format... func_convert_file_noop
+checking for /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... false
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... rm: conftest.dSYM: is a directory
+no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... rm: conftest.dSYM: is a directory
+ok
+checking for sysroot... no
+checking for a working dd... /./bin/dd
+checking how to truncate binary pipes... /./bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... yes
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fno-common -DPIC
+checking if gcc PIC flag -fno-common -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin19.2.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld... no
+checking whether the g++ linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fno-common -DPIC
+checking if g++ PIC flag -fno-common -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin19.2.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking for inline... inline
+configure: WARNING: "Explicit GC_INIT() calls may be required."
+checking for pthread_self in -lpthread... yes
+checking whether compiler supports -Wextra... yes
+checking whether compiler supports -Wpedantic... yes
+checking for xlc... no
+checking whether compiler supports -fno-strict-aliasing... yes
+checking for getcontext... yes
+checking for dl_iterate_phdr... no
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking whether to build shared libraries... no
+checking which machine-dependent code should be used... 
+checking whether Solaris gcc optimization fix is necessary... no
+checking for dladdr... yes
+checking for sigsetjmp... yes
+checking sys/dg_sys_info.h usability... no
+checking sys/dg_sys_info.h presence... no
+checking for sys/dg_sys_info.h... no
+checking for compiler intrinsics support... yes
+checking which libatomic_ops to use... none
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating bdw-gc.pc
+config.status: creating include/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default commands
++ touch .configured-8.0.4
++ set +x
+make: Entering directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
++ make -j1 prefix=/tmp/build-dir/usr-host
+make[3]: Entering directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
+make[4]: Entering directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
+depbase=`echo allchblk.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT allchblk.lo -MD -MP -MF $depbase.Tpo -c -o allchblk.lo allchblk.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT allchblk.lo -MD -MP -MF .deps/allchblk.Tpo -c allchblk.c -o allchblk.o
+depbase=`echo alloc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT alloc.lo -MD -MP -MF $depbase.Tpo -c -o alloc.lo alloc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT alloc.lo -MD -MP -MF .deps/alloc.Tpo -c alloc.c -o alloc.o
+depbase=`echo blacklst.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT blacklst.lo -MD -MP -MF $depbase.Tpo -c -o blacklst.lo blacklst.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT blacklst.lo -MD -MP -MF .deps/blacklst.Tpo -c blacklst.c -o blacklst.o
+depbase=`echo dbg_mlc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT dbg_mlc.lo -MD -MP -MF $depbase.Tpo -c -o dbg_mlc.lo dbg_mlc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT dbg_mlc.lo -MD -MP -MF .deps/dbg_mlc.Tpo -c dbg_mlc.c -o dbg_mlc.o
+depbase=`echo dyn_load.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT dyn_load.lo -MD -MP -MF $depbase.Tpo -c -o dyn_load.lo dyn_load.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT dyn_load.lo -MD -MP -MF .deps/dyn_load.Tpo -c dyn_load.c -o dyn_load.o
+depbase=`echo finalize.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT finalize.lo -MD -MP -MF $depbase.Tpo -c -o finalize.lo finalize.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT finalize.lo -MD -MP -MF .deps/finalize.Tpo -c finalize.c -o finalize.o
+depbase=`echo gc_dlopen.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT gc_dlopen.lo -MD -MP -MF $depbase.Tpo -c -o gc_dlopen.lo gc_dlopen.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT gc_dlopen.lo -MD -MP -MF .deps/gc_dlopen.Tpo -c gc_dlopen.c -o gc_dlopen.o
+depbase=`echo gcj_mlc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT gcj_mlc.lo -MD -MP -MF $depbase.Tpo -c -o gcj_mlc.lo gcj_mlc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT gcj_mlc.lo -MD -MP -MF .deps/gcj_mlc.Tpo -c gcj_mlc.c -o gcj_mlc.o
+depbase=`echo headers.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT headers.lo -MD -MP -MF $depbase.Tpo -c -o headers.lo headers.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT headers.lo -MD -MP -MF .deps/headers.Tpo -c headers.c -o headers.o
+depbase=`echo mach_dep.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT mach_dep.lo -MD -MP -MF $depbase.Tpo -c -o mach_dep.lo mach_dep.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT mach_dep.lo -MD -MP -MF .deps/mach_dep.Tpo -c mach_dep.c -o mach_dep.o
+depbase=`echo malloc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT malloc.lo -MD -MP -MF $depbase.Tpo -c -o malloc.lo malloc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT malloc.lo -MD -MP -MF .deps/malloc.Tpo -c malloc.c -o malloc.o
+depbase=`echo mallocx.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT mallocx.lo -MD -MP -MF $depbase.Tpo -c -o mallocx.lo mallocx.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT mallocx.lo -MD -MP -MF .deps/mallocx.Tpo -c mallocx.c -o mallocx.o
+depbase=`echo mark.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT mark.lo -MD -MP -MF $depbase.Tpo -c -o mark.lo mark.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT mark.lo -MD -MP -MF .deps/mark.Tpo -c mark.c -o mark.o
+depbase=`echo mark_rts.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT mark_rts.lo -MD -MP -MF $depbase.Tpo -c -o mark_rts.lo mark_rts.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT mark_rts.lo -MD -MP -MF .deps/mark_rts.Tpo -c mark_rts.c -o mark_rts.o
+depbase=`echo misc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT misc.lo -MD -MP -MF $depbase.Tpo -c -o misc.lo misc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT misc.lo -MD -MP -MF .deps/misc.Tpo -c misc.c -o misc.o
+depbase=`echo new_hblk.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT new_hblk.lo -MD -MP -MF $depbase.Tpo -c -o new_hblk.lo new_hblk.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT new_hblk.lo -MD -MP -MF .deps/new_hblk.Tpo -c new_hblk.c -o new_hblk.o
+depbase=`echo obj_map.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT obj_map.lo -MD -MP -MF $depbase.Tpo -c -o obj_map.lo obj_map.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT obj_map.lo -MD -MP -MF .deps/obj_map.Tpo -c obj_map.c -o obj_map.o
+depbase=`echo os_dep.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT os_dep.lo -MD -MP -MF $depbase.Tpo -c -o os_dep.lo os_dep.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT os_dep.lo -MD -MP -MF .deps/os_dep.Tpo -c os_dep.c -o os_dep.o
+depbase=`echo ptr_chck.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT ptr_chck.lo -MD -MP -MF $depbase.Tpo -c -o ptr_chck.lo ptr_chck.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT ptr_chck.lo -MD -MP -MF .deps/ptr_chck.Tpo -c ptr_chck.c -o ptr_chck.o
+depbase=`echo reclaim.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT reclaim.lo -MD -MP -MF $depbase.Tpo -c -o reclaim.lo reclaim.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT reclaim.lo -MD -MP -MF .deps/reclaim.Tpo -c reclaim.c -o reclaim.o
+depbase=`echo specific.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT specific.lo -MD -MP -MF $depbase.Tpo -c -o specific.lo specific.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT specific.lo -MD -MP -MF .deps/specific.Tpo -c specific.c -o specific.o
+depbase=`echo typd_mlc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT typd_mlc.lo -MD -MP -MF $depbase.Tpo -c -o typd_mlc.lo typd_mlc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT typd_mlc.lo -MD -MP -MF .deps/typd_mlc.Tpo -c typd_mlc.c -o typd_mlc.o
+depbase=`echo pthread_start.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT pthread_start.lo -MD -MP -MF $depbase.Tpo -c -o pthread_start.lo pthread_start.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT pthread_start.lo -MD -MP -MF .deps/pthread_start.Tpo -c pthread_start.c -o pthread_start.o
+depbase=`echo pthread_support.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT pthread_support.lo -MD -MP -MF $depbase.Tpo -c -o pthread_support.lo pthread_support.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT pthread_support.lo -MD -MP -MF .deps/pthread_support.Tpo -c pthread_support.c -o pthread_support.o
+depbase=`echo darwin_stop_world.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT darwin_stop_world.lo -MD -MP -MF $depbase.Tpo -c -o darwin_stop_world.lo darwin_stop_world.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT darwin_stop_world.lo -MD -MP -MF .deps/darwin_stop_world.Tpo -c darwin_stop_world.c -o darwin_stop_world.o
+depbase=`echo thread_local_alloc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT thread_local_alloc.lo -MD -MP -MF $depbase.Tpo -c -o thread_local_alloc.lo thread_local_alloc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT thread_local_alloc.lo -MD -MP -MF .deps/thread_local_alloc.Tpo -c thread_local_alloc.c -o thread_local_alloc.o
+depbase=`echo fnlz_mlc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT fnlz_mlc.lo -MD -MP -MF $depbase.Tpo -c -o fnlz_mlc.lo fnlz_mlc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT fnlz_mlc.lo -MD -MP -MF .deps/fnlz_mlc.Tpo -c fnlz_mlc.c -o fnlz_mlc.o
+/bin/sh ./libtool  --tag=CC   --mode=link gcc   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -Wl,-single_module -version-info 5:3:4 -no-undefined -L/tmp/build-dir/usr-host/lib  -L/tmp/build-dir/submodules/memtailor/.libs  -L/tmp/build-dir/submodules/mathic/.libs  -L/tmp/build-dir/submodules/mathicgb/.libs -g3 -headerpad_max_install_names -o libgc.la -rpath /tmp/build-dir/usr-host/lib allchblk.lo alloc.lo blacklst.lo dbg_mlc.lo dyn_load.lo finalize.lo gc_dlopen.lo gcj_mlc.lo headers.lo mach_dep.lo malloc.lo mallocx.lo mark.lo mark_rts.lo misc.lo new_hblk.lo obj_map.lo os_dep.lo ptr_chck.lo reclaim.lo specific.lo typd_mlc.lo  pthread_start.lo pthread_support.lo darwin_stop_world.lo  thread_local_alloc.lo   fnlz_mlc.lo  -lpthread   
+libtool: link: ar cru .libs/libgc.a  allchblk.o alloc.o blacklst.o dbg_mlc.o dyn_load.o finalize.o gc_dlopen.o gcj_mlc.o headers.o mach_dep.o malloc.o mallocx.o mark.o mark_rts.o misc.o new_hblk.o obj_map.o os_dep.o ptr_chck.o reclaim.o specific.o typd_mlc.o pthread_start.o pthread_support.o darwin_stop_world.o thread_local_alloc.o fnlz_mlc.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgc.a(gc_dlopen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgc.a(gcj_mlc.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgc.a(specific.o) has no symbols
+libtool: link: ranlib .libs/libgc.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgc.a(gc_dlopen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgc.a(gcj_mlc.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: .libs/libgc.a(specific.o) has no symbols
+libtool: link: ( cd ".libs" && rm -f "libgc.la" && ln -s "../libgc.la" "libgc.la" )
+depbase=`echo gc_cpp.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu++11 -g3 -O2 -Wno-mismatched-tags -w  -MT gc_cpp.lo -MD -MP -MF $depbase.Tpo -c -o gc_cpp.lo gc_cpp.cc &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  g++ -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu++11 -g3 -O2 -Wno-mismatched-tags -w -MT gc_cpp.lo -MD -MP -MF .deps/gc_cpp.Tpo -c gc_cpp.cc -o gc_cpp.o
+/bin/sh ./libtool  --tag=CXX   --mode=link g++ -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu++11 -g3 -O2 -Wno-mismatched-tags -w  -version-info 5:0:4 -no-undefined -L/tmp/build-dir/usr-host/lib  -L/tmp/build-dir/submodules/memtailor/.libs  -L/tmp/build-dir/submodules/mathic/.libs  -L/tmp/build-dir/submodules/mathicgb/.libs -g3 -headerpad_max_install_names -o libgccpp.la -rpath /tmp/build-dir/usr-host/lib gc_cpp.lo ./libgc.la 
+libtool: link: ar cru .libs/libgccpp.a  gc_cpp.o
+libtool: link: ranlib .libs/libgccpp.a
+libtool: link: ( cd ".libs" && rm -f "libgccpp.la" && ln -s "../libgccpp.la" "libgccpp.la" )
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT cord/libcord_la-cordbscs.lo -MD -MP -MF cord/.deps/libcord_la-cordbscs.Tpo -c -o cord/libcord_la-cordbscs.lo `test -f 'cord/cordbscs.c' || echo './'`cord/cordbscs.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT cord/libcord_la-cordbscs.lo -MD -MP -MF cord/.deps/libcord_la-cordbscs.Tpo -c cord/cordbscs.c -o cord/libcord_la-cordbscs.o
+mv -f cord/.deps/libcord_la-cordbscs.Tpo cord/.deps/libcord_la-cordbscs.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT cord/libcord_la-cordprnt.lo -MD -MP -MF cord/.deps/libcord_la-cordprnt.Tpo -c -o cord/libcord_la-cordprnt.lo `test -f 'cord/cordprnt.c' || echo './'`cord/cordprnt.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT cord/libcord_la-cordprnt.lo -MD -MP -MF cord/.deps/libcord_la-cordprnt.Tpo -c cord/cordprnt.c -o cord/libcord_la-cordprnt.o
+mv -f cord/.deps/libcord_la-cordprnt.Tpo cord/.deps/libcord_la-cordprnt.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include   -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -MT cord/libcord_la-cordxtra.lo -MD -MP -MF cord/.deps/libcord_la-cordxtra.Tpo -c -o cord/libcord_la-cordxtra.lo `test -f 'cord/cordxtra.c' || echo './'`cord/cordxtra.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I./include -I./include -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include -DNDEBUG -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing -MT cord/libcord_la-cordxtra.lo -MD -MP -MF cord/.deps/libcord_la-cordxtra.Tpo -c cord/cordxtra.c -o cord/libcord_la-cordxtra.o
+mv -f cord/.deps/libcord_la-cordxtra.Tpo cord/.deps/libcord_la-cordxtra.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link gcc   -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -std=gnu11 -g3 -O2 -w -fno-strict-aliasing  -version-info 5:0:4 -no-undefined -L/tmp/build-dir/usr-host/lib  -L/tmp/build-dir/submodules/memtailor/.libs  -L/tmp/build-dir/submodules/mathic/.libs  -L/tmp/build-dir/submodules/mathicgb/.libs -g3 -headerpad_max_install_names -o libcord.la -rpath /tmp/build-dir/usr-host/lib cord/libcord_la-cordbscs.lo cord/libcord_la-cordprnt.lo cord/libcord_la-cordxtra.lo ./libgc.la 
+libtool: link: ar cru .libs/libcord.a  cord/libcord_la-cordbscs.o cord/libcord_la-cordprnt.o cord/libcord_la-cordxtra.o
+libtool: link: ranlib .libs/libcord.a
+libtool: link: ( cd ".libs" && rm -f "libcord.la" && ln -s "../libcord.la" "libcord.la" )
+make[4]: Leaving directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
+make[3]: Leaving directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
++ :
++ touch .compiled-8.0.4
+( set +x && cd build/gc-8.0.4 && echo make: Entering directory \'`pwd`\' && set -x && set -x ; make -j1  prefix=/tmp/build-dir/usr-host install && rm -f /tmp/build-dir/usr-host/lib/*.la  )
+make: Entering directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
++ set -x
++ make -j1 prefix=/tmp/build-dir/usr-host install
+make[3]: Entering directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
+make[4]: Entering directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
+make[5]: Entering directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
+ /usr/local/bin/gmkdir -p '/tmp/build-dir/usr-host/lib'
+ /bin/sh ./libtool   --mode=install /usr/local/bin/ginstall -c   libgc.la libgccpp.la libcord.la '/tmp/build-dir/usr-host/lib'
+libtool: install: /usr/local/bin/ginstall -c .libs/libgc.lai /tmp/build-dir/usr-host/lib/libgc.la
+libtool: install: /usr/local/bin/ginstall -c .libs/libgccpp.lai /tmp/build-dir/usr-host/lib/libgccpp.la
+libtool: install: /usr/local/bin/ginstall -c .libs/libcord.lai /tmp/build-dir/usr-host/lib/libcord.la
+libtool: install: /usr/local/bin/ginstall -c .libs/libgc.a /tmp/build-dir/usr-host/lib/libgc.a
+libtool: install: chmod 644 /tmp/build-dir/usr-host/lib/libgc.a
+libtool: install: ranlib /tmp/build-dir/usr-host/lib/libgc.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /tmp/build-dir/usr-host/lib/libgc.a(gc_dlopen.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /tmp/build-dir/usr-host/lib/libgc.a(gcj_mlc.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /tmp/build-dir/usr-host/lib/libgc.a(specific.o) has no symbols
+libtool: install: /usr/local/bin/ginstall -c .libs/libgccpp.a /tmp/build-dir/usr-host/lib/libgccpp.a
+libtool: install: chmod 644 /tmp/build-dir/usr-host/lib/libgccpp.a
+libtool: install: ranlib /tmp/build-dir/usr-host/lib/libgccpp.a
+libtool: install: /usr/local/bin/ginstall -c .libs/libcord.a /tmp/build-dir/usr-host/lib/libcord.a
+libtool: install: chmod 644 /tmp/build-dir/usr-host/lib/libcord.a
+libtool: install: ranlib /tmp/build-dir/usr-host/lib/libcord.a
+ /usr/local/bin/gmkdir -p '/tmp/build-dir/usr-host/share/doc/gc'
+ /usr/local/bin/ginstall -c -m 644 AUTHORS README.md doc/README.DGUX386 doc/README.Mac doc/README.OS2 doc/README.amiga doc/README.arm.cross doc/README.autoconf doc/README.cmake doc/README.cords doc/README.darwin doc/README.environment doc/README.ews4800 doc/README.hp doc/README.linux doc/README.macros doc/README.rs6000 doc/README.sgi doc/README.solaris2 doc/README.symbian doc/README.uts doc/README.win32 doc/README.win64 doc/debugging.md doc/finalization.md doc/gcdescr.md doc/gcinterface.md doc/leak.md doc/overview.md doc/porting.md doc/scale.md doc/simple_example.md doc/tree.md '/tmp/build-dir/usr-host/share/doc/gc'
+ /usr/local/bin/gmkdir -p '/tmp/build-dir/usr-host/include'
+ /usr/local/bin/ginstall -c -m 644 include/extra/gc_cpp.h include/extra/gc.h '/tmp/build-dir/usr-host/include'
+ /usr/local/bin/gmkdir -p '/tmp/build-dir/usr-host/share/man/man3'
+ /usr/local/bin/ginstall -c -m 644 'doc/gc.man' '/tmp/build-dir/usr-host/share/man/man3/gc.3'
+ /usr/local/bin/gmkdir -p '/tmp/build-dir/usr-host/lib/pkgconfig'
+ /usr/local/bin/ginstall -c -m 644 bdw-gc.pc '/tmp/build-dir/usr-host/lib/pkgconfig'
+ /usr/local/bin/gmkdir -p '/tmp/build-dir/usr-host/include/gc'
+ /usr/local/bin/ginstall -c -m 644 include/gc_disclaim.h include/gc_allocator.h include/gc_cpp.h include/gc.h include/gc_backptr.h include/gc_config_macros.h include/gc_gcj.h include/gc_inline.h include/gc_mark.h include/gc_pthread_redirects.h include/gc_tiny_fl.h include/gc_typed.h include/gc_version.h include/javaxfc.h include/leak_detector.h include/cord.h include/cord_pos.h include/ec.h '/tmp/build-dir/usr-host/include/gc'
+make[5]: Leaving directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
+make[4]: Leaving directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
+make[3]: Leaving directory '/private/tmp/build-dir/libraries/gc/build/gc-8.0.4'
++ rm -f /tmp/build-dir/usr-host/lib/libcord.la /tmp/build-dir/usr-host/lib/libgc.la /tmp/build-dir/usr-host/lib/libgccpp.la
+/usr/local/bin/ginstall -c -d /tmp/build-dir/usr-host/licenses/gc
+set -e ; cd build/gc-8.0.4 && for p in README.QUICK ; do (set -x ; /usr/local/bin/ginstall -c -m 644 "$p" /tmp/build-dir/usr-host/licenses/gc) ; done
++ /usr/local/bin/ginstall -c -m 644 README.QUICK /tmp/build-dir/usr-host/licenses/gc
+for l in /tmp/build-dir/usr-host/lib/*.dylib /tmp/build-dir/usr-host/lib/*.so /tmp/build-dir/usr-host/lib/*.so.* ;	\
+do if [ -f "$l" ] ;										\
+   then echo "copying $l to /tmp/build-dir/usr-dist/x86_64-Darwin-MacOS-10.15.2/lib/Macaulay2/lib" ;				\
+	/usr/local/bin/ginstall -c -d "/tmp/build-dir/usr-dist/x86_64-Darwin-MacOS-10.15.2/lib/Macaulay2/lib" ;					\
+	/usr/local/bin/ginstall -c -m 644 "$l" "/tmp/build-dir/usr-dist/x86_64-Darwin-MacOS-10.15.2/lib/Macaulay2/lib" ;				\
+   fi												\
+done
+touch .installed-8.0.4
+rm -f /tmp/build-dir/usr-host/lib/libcord*
+make[2]: Leaving directory '/private/tmp/build-dir/libraries/gc'
+make -C mpir all
+make[2]: Entering directory '/private/tmp/build-dir/libraries/mpir'
+if [ -d build -a -d build-old/build ] ; \
+    then echo please remove or move build-old/build out of the way ; \
+         exit 1 ; \
+    fi
+if [ -d build ] ; then mv build build-old ; fi
+mkdir build
+cd build && gtar xf /Users/dan/src/M2/M2.git/M2/BUILD/tarfiles/mpir-3.0.0.tar.bz2 --bzip2
+cd build && for i in /Users/dan/src/M2/M2.git/M2/libraries/mpir/patch-3.0.0 ; do patch --batch -p0 < $i ; done
+patching file mpir-3.0.0/mp_set_fns.c
+touch .patched-3.0.0
++ set +x
+make: Entering directory '/private/tmp/build-dir/libraries/mpir/build/mpir-3.0.0'
++ autoconf
++ ./configure --prefix=/tmp/build-dir/usr-host AR=ar AS=as DLLTOOL=false OBJDUMP=objdump STRIP=strip 'CXXFLAGS=-std=gnu++11 -g3 -O2 -Wno-mismatched-tags -w' 'CFLAGS=-std=gnu11 -g3 -O2 -w' FFLAGS=-O2 FCFLAGS=-O2 TARGET_ARCH= 'CPPFLAGS=-I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG' CC=gcc CXX=g++ 'LDFLAGS=-L/tmp/build-dir/usr-host/lib  -L/tmp/build-dir/submodules/memtailor/.libs  -L/tmp/build-dir/submodules/mathic/.libs  -L/tmp/build-dir/submodules/mathicgb/.libs -g3 -headerpad_max_install_names' LOADLIBES= LDLIBS= --enable-gmpcompat --enable-cxx --disable-shared --cache-file=/dev/null
+checking build system type... x86_64-apple-darwin19.2.0
+checking host system type... x86_64-apple-darwin19.2.0
+checking for a BSD-compatible install... /usr/local/bin/ginstall -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/local/bin/gmkdir -p
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking ABI=64
+checking compiler gcc -std=gnu11 -g3 -O2 -w -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... rm: conftest.dSYM: is a directory
+yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking for gcc option to accept ISO C99... none needed
+checking for gcc option to accept ISO Standard C... (cached) none needed
+checking how to run the C preprocessor... gcc -E
+checking build system compiler gcc... yes
+checking for build system preprocessor... gcc -E
+checking for build system executable suffix... 
+checking whether build system compiler is ANSI... no
+checking for build system compiler math library... -lm
+Looking for a system-wide yasm...
+Checking yasm...
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking C++ compiler g++ -I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG -std=gnu++11 -g3 -O2 -Wno-mismatched-tags -w... yes
+using ABI="64"
+      CC="gcc"
+      CFLAGS="-std=gnu11 -g3 -O2 -w"
+      CPPFLAGS="-I/Users/dan/src/M2/M2.git/M2/include -I/tmp/build-dir/include -I/tmp/build-dir/usr-host/include -I/tmp/build-dir/usr-host/include/cdd  -I/Users/dan/src/M2/M2.git/M2/submodules/memtailor/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathic/src  -I/Users/dan/src/M2/M2.git/M2/submodules/mathicgb/src  -I/Users/dan/src/M2/M2.git/M2/submodules/fflas_ffpack/src -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2 -isystem /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2 -isystem /usr/local/Cellar/libatomic_ops/7.6.10/include  -DNDEBUG"
+      CXX="g++"
+      CXXFLAGS="-std=gnu++11 -g3 -O2 -Wno-mismatched-tags -w"
+      MPN_PATH=" x86_64 generic"
+checking for ar... ar
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld... no
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 196608
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-apple-darwin19.2.0 file names to x86_64-apple-darwin19.2.0 format... func_convert_file_noop
+checking how to convert x86_64-apple-darwin19.2.0 file names to toolchain format... func_convert_file_noop
+checking for /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... false
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... yes
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fno-common -DPIC
+checking if gcc PIC flag -fno-common -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin19.2.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld... no
+checking whether the g++ linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fno-common -DPIC
+checking if g++ PIC flag -fno-common -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin19.2.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking for ANSI C header files... (cached) yes
+checking whether time.h and sys/time.h may both be included... yes
+checking fenv.h usability... yes
+checking fenv.h presence... yes
+checking for fenv.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking nl_types.h usability... yes
+checking nl_types.h presence... yes
+checking for nl_types.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/processor.h usability... no
+checking sys/processor.h presence... no
+checking for sys/processor.h... no
+checking sys/pstat.h usability... no
+checking sys/pstat.h presence... no
+checking for sys/pstat.h... no
+checking sys/sysinfo.h usability... no
+checking sys/sysinfo.h presence... no
+checking for sys/sysinfo.h... no
+checking sys/systemcfg.h usability... no
+checking sys/systemcfg.h presence... no
+checking for sys/systemcfg.h... no
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/times.h usability... yes
+checking sys/times.h presence... yes
+checking for sys/times.h... yes
+checking for sys/resource.h... yes
+checking for sys/sysctl.h... yes
+checking whether fgetc is declared... yes
+checking whether fscanf is declared... yes
+checking whether optarg is declared... yes
+checking whether ungetc is declared... yes
+checking whether vfprintf is declared... yes
+checking whether sys_errlist is declared... yes
+checking whether sys_nerr is declared... yes
+checking return type of signal handlers... void
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking for long double... yes
+checking for long long... yes
+checking for ptrdiff_t... yes
+checking for quad_t... yes
+checking for uint_least32_t... yes
+checking for preprocessor stringizing operator... yes
+checking for working volatile... yes
+checking whether <stdarg.h> exists and works... yes
+checking whether gcc __attribute__ ((const)) works... yes
+checking whether gcc __attribute__ ((malloc)) works... yes
+checking whether gcc __attribute__ ((mode (XX))) works... yes
+checking whether gcc __attribute__ ((noreturn)) works... yes
+checking for inline... inline
+configure: WARNING: mpir.h doesnt recognise compiler "inline", inlines will be unavailable
+checking for working alloca.h... yes
+checking for alloca (via gmp-impl.h)... yes
+checking how to allocate temporary memory... alloca
+checking whether byte ordering is bigendian... no
+checking format of `double' floating point... IEEE little endian
+checking for alarm... yes
+checking for attr_get... no
+checking for clock... yes
+checking for clock_gettime... yes
+checking for cputime... no
+checking for getpagesize... yes
+checking for getrusage... yes
+checking for gettimeofday... yes
+checking for getsysinfo... no
+checking for localeconv... yes
+checking for memset... yes
+checking for mmap... yes
+checking for nl_langinfo... yes
+checking for obstack_vprintf... no
+checking for popen... yes
+checking for processor_info... yes
+checking for pstat_getprocessor... no
+checking for raise... yes
+checking for read_real_time... no
+checking for syssgi... no
+checking for strchr... yes
+checking for strerror... yes
+checking for strnlen... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for sysconf... yes
+checking for sysctl... yes
+checking for sysctlbyname... yes
+checking for times... yes
+checking for mprotect... yes
+checking for vsnprintf... yes
+checking whether vsnprintf works... yes
+checking whether sscanf needs writable input... no
+checking for struct pst_processor.psp_iticksperclktick... no
+checking sstream usability... yes
+checking sstream presence... yes
+checking for sstream... yes
+checking for std::locale...   C-c C-cmake[2]: *** [../Makefile.library:181: .configured-3.0.0] Error 1
+make[1]: *** [Makefile:7: all-in-mpir] Interrupt: 2
+make: *** [GNUmakefile:196: all-in-libraries] Interrupt: 2
+
+gallium$ : hi there
+gallium$ type :
+: is a shell builtin
+gallium$ ps $$
+  PID   TT  STAT      TIME COMMAND
+40623 s004  Ss     0:00.03 /bin/bash -i
+gallium$ help :
+:: :
+    No effect; the command does nothing.  A zero exit code is returned.
+gallium$ 
