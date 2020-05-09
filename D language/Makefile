@@ -4,5 +4,6 @@
 all : foo
 foo : foo.d
 	scc1 -noline foo.d
+	mv foo-exports.h.tmp foo-exports.h
 	scc1 -typecodes
-clean : ; rm -f *.tmp *-tmp.c typecode.db
+clean : ; rm -f *.tmp *-tmp.c typecode.db *-exports.h
