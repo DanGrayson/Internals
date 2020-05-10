@@ -1,0 +1,36 @@
+
+Here are the files, in logical order, with line counts:
+
+     152 arithmetic.d *				     149 basic.d		
+      61 atomic.d				     417 convertr.d *
+     156 M2.d					     303 common.d		
+     231 system.d				     298 util.d			
+      72 strings.d				     118 struct.d		
+      90 varstrin.d				     188 classes.dd		
+      37 strings1.d				      49 buckets.dd		
+      45 errio.d				     236 equality.dd		
+      45 vararray.d				     887 hashtables.dd *
+      61 ctype.d				      54 sets.dd		
+     399 nets.d					     259 version.dd *
+      84 varnets.d				    1813 evaluate.d *		
+      78 interrupts.d				      25 mysqldummy.d		
+      44 pthread0.d				     223 pthread.d		
+       7 stdiop0.d				    1103 actors.d		
+    1512 gmp.d					     733 actors2.dd		
+     246 engine.dd				    2110 actors3.d *
+      27 xml.d					    1577 actors4.d		
+      53 stdio0.d				     178 xmlactors.d		
+     506 parse.d *				    2107 actors5.d		
+     407 expr.d					      36 actors6.dd		
+    1036 stdio.d				       3 threads.dd		
+     201 stdiop.d				      47 pari.d			
+      52 err.d					      46 flint.d		
+     235 gmp1.d					    4365 interface.dd *
+     171 tokens.d				     604 interface2.d *		
+      18 getline.d				      39 texmacs.d		
+     410 lex.d					     644 interp.dd *
+     571 parser.d *				
+     821 binding.d *
+
+
+   26439 total
