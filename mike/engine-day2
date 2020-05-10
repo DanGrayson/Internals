@@ -1,0 +1,79 @@
+M2 internals
+Mike Stillman
+Sunday, May 10, 2020
+
+Today: a view of code in the engine.
+1. debug.{hpp,cpp}, (therefore 'buffer' as well, as well as A->text_out, A->elem_text_out).
+2. look at Ring, ring_elem, RingElement.  Doxygen class structure for these.
+3. look at ARing's, ConcreteRing<RT>
+4. look at DMat structure
+5. look at computations.
+Include at some point: our_new_delete, VECTOR vs std::vector?
+6. Working with engine source code: compile in debug mode, build doc, unit tests, use the debugger.
+   IDE support from cmake branch (e.g. CLion).
+
+Code Examples/Exercises
+
+2. Debug tips: display stuff using functions in debug.hpp.  Look at
+  the definitions of these functions.  (Notice they use a class called
+  buffer, in e/buffer.hpp).
+
+  Use them in either the debugger, or as print statements to determine
+  what is happening in a piece of code.
+  
+  Project: Write debug output routines for all the major types, using
+    ostrstreams.  Basically, replace buffer.{hpp,cpp}.  There are some
+    subtleties though!
+
+3. Structure: Ring, ring_elem, and also FreeModule, Matrix.
+  (leaving out Monoid, SchreyerOrder, monomials.)
+
+  PROJECT: use class names for monomials of different sorts.
+    What we use is not very type safe, and is not self-documenting.
+
+  PROJECT: make all constructors of ring_elem explicit.
+
+4. Structure ARing's.  View one in some detail. 
+  ConcreteRing<RT>: public Ring
+  
+  Project: help design the namespaces we use.  Make them sane.
+  
+  look at aring-zzp-flint.{hpp,cpp}
+  aring-zz-gmp.{hpp,cpp}
+  
+  What are all of these? 
+    zzp: 3 flavors
+    gf: 3 flavors (or 4)
+    zz: 2 flavors
+    qq: 2 flavors
+    RR
+    CC
+    RRR
+    CCC
+    ...
+
+5. Structure: MutableMatrix
+  DMat<RT>
+  SMat<RT>
+  MutableMat<DMat<RT>>  (front end object)
+  MutableMat<SMat<RT>>  (front end object)
+
+  PROJECT: combine: SMat, ring-vecs.cpp, Matrix (at least the actual matrix part).
+  use a better Sparse matrix representation, such as that used by eigen3.
+  If you want to do this: talk to me, so we don't have duplicate effort!
+  
+6. Structure of Computation  
+  Computation (comp.hpp)
+    GBComputation (comp-gb.hpp)
+      gbA (gb-default.hpp)
+      F4Computation (f4/f4-computation.hpp)
+    ResolutionComputation (comp-res.hpp, also choose_res, choose_gb).
+    
+  Reduced Groebner bases:
+
+  Fast minimal betti numbers
+  
+  Hilbert functions
+  
+
+        
