@@ -26,7 +26,7 @@ Here are the files, in logical order, with line counts:
      201 stdiop.d				      47 pari.d			
       52 err.d					      46 flint.d		
      235 gmp1.d					    4365 interface.dd *
-     171 tokens.d				     604 interface2.d *		
+     171 tokens.d *				     604 interface2.d *		
       18 getline.d				      39 texmacs.d		
      410 lex.d					     644 interp.dd *
      571 parser.d *				
