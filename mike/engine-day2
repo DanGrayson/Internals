@@ -12,7 +12,7 @@ Include at some point: our_new_delete, VECTOR vs std::vector?
 6. Working with engine source code: compile in debug mode, build doc, unit tests, use the debugger.
    IDE support from cmake branch (e.g. CLion).
 
-Code Examples/Exercises
+More notes, some possible projects (but they need too be developed more carefully)
 
 2. Debug tips: display stuff using functions in debug.hpp.  Look at
   the definitions of these functions.  (Notice they use a class called
@@ -46,10 +46,7 @@ Code Examples/Exercises
     gf: 3 flavors (or 4)
     zz: 2 flavors
     qq: 2 flavors
-    RR
-    CC
-    RRR
-    CCC
+    RR, CC, RRR, CCC
     ...
 
 5. Structure: MutableMatrix
@@ -69,11 +66,6 @@ Code Examples/Exercises
       F4Computation (f4/f4-computation.hpp)
     ResolutionComputation (comp-res.hpp, also choose_res, choose_gb).
     
-  Reduced Groebner bases:
-
-  Fast minimal betti numbers
-  
-  Hilbert functions
   
 
         
