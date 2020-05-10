@@ -1,0 +1,79 @@
+Exercises for day 2.
+    (Some of these are taken from yesterday).
+
+1. review e/debug.hpp, and e/debug.cpp and perhaps buffer.{hpp,cpp}.
+
+  Grep or tags search for 'rawLinAlgDeterminant' in the m2 directory.
+    Write a .m2 file, which includes several matrices, which
+    calls this function when asked for the determinant of a
+    (mutable) matrix.
+
+  Now find out how 'rawLinAlgDeterminant' is defined in the engine.
+    In the places it is used, add in display of the matrix before
+    computing the determinant (perhaps with a friendly note to
+    yourself being displayed as well, perhaps also display the ring).
+
+#### The rest of the exercise list is to get practice building
+#### debugging, building docs, running unit tests.
+
+2. Build a debug version of M2. Use gdb or lldb.  Set a breakpoint in one of the
+    functions you found above.  Run the debugger. Look at the
+    variables at a breakpoint in the function above, using the same
+    dmutablemat).
+
+  Here are some possibly useful notes about this build:
+
+    ## cmake build
+
+    cd cleveland
+    mkdir m2-debug-build # put this directory where you want
+    cd m2-debug-build
+    cmake -GNinja -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTING=on ../m2-cmake-git/M2
+    time ninja build-libraries
+    time ninja M2-core
+
+    ## configure build
+  
+    mkdir BUILD/debug # put this directory where you want
+    cd BUILD/debug
+    ../../configure --enable-debug --disable-optimize --prefix="`pwd`/installed" --enable-download
+    gmake # or make.  Feel free to control-C out once the m2 examples all start building.
+    
+  install gdb (for gcc) or llvm, lldb (for clang.  MacOS will have these 
+      if you have already installed xcode tools). For gdb: you must codesign it.
+  
+  google to find out the main commands for gdb, lldb, and how to use these
+  at the command line.  For example:   http://lldb.llvm.org/lldb-gdb.html
+
+  PROJECT: for the WIKI: add some references and/or basic commands.
+
+  alternative: CLion, debug using that. (still useful to know command
+  line debugger commands).  Xcode should work too, but I haven't got
+  that to work yet.
+    
+3. Create the doxygen documentation
+   for any kind of build, first install 'doxygen'.  For the cmake build,
+     it will complain that you don't have sphinx.  Ignore that.
+   configure:
+     in the Macaulay2/e directory in the build tree:
+     make tinydoc
+     open doc/tinydoc/index.html
+   cmake build system: at top level in the build tree:
+     cmake -DBUILD_DOCS=on .
+     ninja M2-docs-doxygen
+     open Macaulay2/docs/doxygen/html/index.html
+
+  PROJECT: add doxygen documentation for a function in the engine.
+    or for many...!
+    
+4. Run the unit tests:
+   In the cmake build:
+     ninja M2-unit-tests  # to build them
+     ctest -R unit
+   In the configure build, in the e directory (the directory is where my build is)
+     cd ~/cleveland/m2-git/M2/BUILD/mike/builds.tmp/darwin64-appleclang/Macaulay2/e/unit-tests
+     gmake check  # or make check
+
+5. If you have CLion (which is free for those at a university),
+    use the cmake branch, and make a CLion project from that.
+
