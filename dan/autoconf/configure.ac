@@ -27,10 +27,12 @@ foo([[[hello,goodbye]]],now)
 AC_SUBST(ISSUE) dnl this declares a substitution variable
 AC_MSG_NOTICE([with ISSUE = $ISSUE])
 
+AC_CONFIG_HEADERS(config.h)
+AC_DEFINE(FOOBAR,"asdf",[FOOBAR is a variable available to C source code])
+
 dnl This creates the final part of the "configure" script:
 AC_OUTPUT()
 
 dnl Local Variables:
 dnl mode: autoconf
-dnl compile-command: "set -ex ; autoconf ; ls -l configure.ac configure ; ./configure ; cat foo.in ; cat foo "
 dnl End:

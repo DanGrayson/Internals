@@ -3,3 +3,6 @@ config.log
 config.status
 configure
 foo
+config.h
+config.h.in
+*~
