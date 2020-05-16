@@ -1,5 +1,7 @@
 dnl This creates the initial part of the "configure" script:
-AC_INIT(Macaulay2, 1.15.0.1, Macaulay2@math.uiuc.edu, Macaulay2, http://macaulay2.com/)
+
+AC_INIT(Macaulay2,NO_VERSION_NUMBER,Macaulay2@math.uiuc.edu, Macaulay2, http://macaulay2.com/)
+PACKAGE_VERSION=`cat $srcdir/VERSION`
 
 dnl This tells what files need to be configured:
 AC_CONFIG_FILES(foo)
@@ -28,7 +30,10 @@ AC_SUBST(ISSUE) dnl this declares a substitution variable
 AC_MSG_NOTICE([with ISSUE = $ISSUE])
 
 AC_CONFIG_HEADERS(config.h)
-AC_DEFINE(FOOBAR,"asdf",[FOOBAR is a variable available to C source code])
+AC_DEFINE(FOOBAR,,[hi there])
+AC_DEFINE(FOOBAR,1,[hi there 1])
+AC_DEFINE(FOOBAR,2,[hi there 2])
+FOOBAR=3
 
 dnl This creates the final part of the "configure" script:
 AC_OUTPUT()
