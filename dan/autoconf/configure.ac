@@ -1,7 +1,6 @@
 dnl This creates the initial part of the "configure" script:
 
-AC_INIT(Macaulay2,NO_VERSION_NUMBER,Macaulay2@math.uiuc.edu, Macaulay2, http://macaulay2.com/)
-PACKAGE_VERSION=`cat $srcdir/VERSION`
+AC_INIT(Macaulay2,[m4_esyscmd_s([cat VERSION])],Macaulay2@math.uiuc.edu, Macaulay2, http://macaulay2.com/)
 
 dnl This tells what files need to be configured:
 AC_CONFIG_FILES(foo)
