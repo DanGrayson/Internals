@@ -1,0 +1,17 @@
+Hooks in Macaulay2
+
+1. Find the github issue involving hooks
+2. Find the code in Macaulay2/m2 that implements hooks
+3. Find all uses of hooks in Macaulay2/m2 and
+    Macaulay2/packages.
+4. Reimplement runHooks so that the first non-null returned value is returned as the value.
+    (currently runHooks depends on the various hooks calling 'break' to return their value)
+    This should still work if a hook function does return its value via 'break'.
+4a. Add a new version of runHooks which allows its function argument to be of the form opts -> arg -> (...).
+5. Implement a listHooks function.
+    If possible, display it as a vertical numbered list so that the 'code' function can be used to
+    see the corresponding hook functions. (hints: see code for 'code', and NumberedVerticalList)
+6. Reimplement the current uses of hooks in Macaulay2/m2 and Macaulay2/packages/
+    (e.g. minimalPresentation, resolution, codim, syz, mingens (currently in LocalRings.m2)
+7. Document these functions.
+

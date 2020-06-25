@@ -1,0 +1,20 @@
+(Not completed yet, don't attempt yet!)
+
+Documentation in the engine
+
+1. Build the documentation in M2
+  either with autotools build (in e directory, make fulldoc, make smalldoc, make tinydoc)
+  or with cmake build (set USE_TESTING=on, then build: M2-docs-doxygen, 
+      with the following variables being important....
+      
+2. View the documentation
+
+3. Find the code for matrices (type is Matrix).
+
+4. Add a documentation "node" for one of the functions in that class.
+
+5. Add documentation for a class.
+
+6. Perhaps add some overview documentation
+
+7. Add todo items.
