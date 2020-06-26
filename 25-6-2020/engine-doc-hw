@@ -1,6 +1,4 @@
-(Not completed yet, don't attempt yet!)
-
-Documentation in the engine
+Problem session: Documentation in the engine
 
 1. Build the documentation in M2
   (a) Install doxygen (via yoour package manager, brew, apt-get, ...)
@@ -11,17 +9,29 @@ Documentation in the engine
   or with cmake build:
     cmake -DBUILD_DOCS=on .
     ninja M2-docs-doxygen
-      with the following variables being important....
+      # with the following cmake variables being important (with their defaults)
+      #   CALL_GRAPH_SETTING=off
+      #   HAV_DOSETTING=off
     open Macaulay2/docs/doxygen/html/index.html 
 
-2. View the documentation
+2. View the documentation, and also look at the corresponding source.
+  Note: not much is done yet!  Part of the goal of this is to be able
+  to get people to help.  Helping with documentation is a good way to
+  learn the engine!  The top pages for doxygen docs in the engine are
+  currently:
+    e/engine.h # has the \mainpage
+    e/defgroups.h # defines groupings.  Needs work too!
 
 3. Find the code for matrices (type is Matrix).
+   Add a documentation "node" for one of the functions in that class.
+   
+4. Add a group "baserings" (in the rings group), and have it include
+  the ring types RingInterface, and all the classes that inherit from
+  RingInterface.  (note: once c++ concepts are in, RingInterface will
+  be made to be a concept) and take those classes out of the @rings
+  group, place them into the @baserings group.
 
-4. Add a documentation "node" for one of the functions in that class.
+  (files of interest here: e/defgroups.h)
 
-5. Add documentation for a class.
-
-6. Perhaps add some overview documentation
-
-7. Add todo items.
+5. Add todo items in the code. (@todo1, @todo2, @todo3).  The number
+  is the priority (1 = highest)
