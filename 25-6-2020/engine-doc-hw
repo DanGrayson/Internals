@@ -3,10 +3,17 @@
 Documentation in the engine
 
 1. Build the documentation in M2
-  either with autotools build (in e directory, make fulldoc, make smalldoc, make tinydoc)
-  or with cmake build (set USE_TESTING=on, then build: M2-docs-doxygen, 
+  (a) Install doxygen (via yoour package manager, brew, apt-get, ...)
+  (b) autotools (in top level build tree)
+    cd Macaulay2/e # in build tree!
+    make tinydoc # or smalldoc, or fulldoc)
+    open doc/tinydoc/index.html # or somehow open that file
+  or with cmake build:
+    cmake -DBUILD_DOCS=on .
+    ninja M2-docs-doxygen
       with the following variables being important....
-      
+    open Macaulay2/docs/doxygen/html/index.html 
+
 2. View the documentation
 
 3. Find the code for matrices (type is Matrix).
