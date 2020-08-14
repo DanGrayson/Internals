@@ -48,16 +48,13 @@ _ADD_COMPONENT_DEPENDENCY(libraries mpfi "" MPFI_FOUND)
     - specify the build prefix (`--prefix=${M2_HOST_PREFIX}`)
     - static vs shared library (search for `${shared_setting}`)
     - don't enable assertions (search for `${assertions_setting}`)
-    - don't build documentation
-    - where to find the dependencies
+    - don't build documentation (I don't think this applies here)
     - set the environmental variables
 - Insert the build commands
   - use `${MAKE} -j${PARALLEL_JOBS}` instead of `make -j`
   - consider only building in certain subdirectories, e.g. with `-C src`
 - Insert the install commands
-  - also create a subdirectory under `${M2_INSTALL_LICENSESDIR}` and copy the license
   - consider using target `install-strip` if available
-- Insert the check commands
 - Insert the `_ADD_COMPONENT_DEPENDENCY` line
   This line tells CMake the dependencies among the libraries Macaulay2 builds
 
@@ -71,13 +68,23 @@ _ADD_COMPONENT_DEPENDENCY(libraries mpfi "" MPFI_FOUND)
     - the order is important: dependencies should come later in the list
   - add the library to `LIBRARY_OPTIONS` (even if it need not be linked with M2-binary)
 - Add a "find_package" module `cmake/FindMPFI.cmake`
-  - preferably use an existing module as template
-  - use standard variables like:
-    -  `MPFI_FOUND`           - system has MPFI lib with correct version
+  - preferably use an existing module as template, here is a basic one:
+```
+find_path(MPFI_INCLUDE_DIR NAMES mpfi.h
+  PATHS ${INCLUDE_INSTALL_DIR} ${CMAKE_INSTALL_PREFIX}/include)
+
+find_library(MPFI_LIBRARIES NAMES mpfi
+  PATHS ${LIB_INSTALL_DIR} ${CMAKE_INSTALL_PREFIX}/lib)
+
+include(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(MPFI DEFAULT_MSG MPFI_INCLUDE_DIR MPFI_LIBRARIES)
+
+mark_as_advanced(MPFI_INCLUDE_DIR MPFI_LIBRARIES)
+```
+  - this defines two important standard variables that will be used by CMake:
     -  `MPFI_INCLUDE_DIR`     - the MPFI include directory
     -  `MPFI_LIBRARIES`       - the MPFI library
-    -  `MPFI_VERSION`         - MPFI version
-  - add `find_package(MPFI	1.5.1)` to `cmake/check-libraries.cmake`
+  - add `find_package(MPFI)` to `cmake/check-libraries.cmake`
   - test that when the library is already installed, it is correctly found by cmake
 
 - Debugging issues:
@@ -127,6 +134,7 @@ _ADD_COMPONENT_DEPENDENCY(libraries mpfi "" MPFI_FOUND)
   - add information about MPFI license
 
 Optional:
+- Add version checking to `FindMPFI.cmake`
 - Add Arb: http://arblib.org/setup.html#download
 
 How to add a new program to the CMake build system for Macaulay2
