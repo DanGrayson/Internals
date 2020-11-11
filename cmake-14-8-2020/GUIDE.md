@@ -17,8 +17,9 @@ ExternalProject_Add(build-mpfi
             COMMAND ${CONFIGURE} --prefix=${M2_HOST_PREFIX}
   BUILD_COMMAND     ${MAKE} -j${PARALLEL_JOBS} all
   INSTALL_COMMAND   ${MAKE} -j${PARALLEL_JOBS} install
+  TEST_COMMAND      ${MAKE} -j${PARALLEL_JOBS} check
   EXCLUDE_FROM_ALL  ON
-  STEP_TARGETS      install
+  STEP_TARGETS      install test
   )
 _ADD_COMPONENT_DEPENDENCY(libraries mpfi "" MPFI_FOUND)
 ```
